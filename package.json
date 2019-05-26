@@ -1,0 +1,22 @@
+{
+  "name": "alejandro-loguercio",
+  "version": "1.0.0",
+  "description": "Alejandro Loguercio personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniel-nm/alejandro-loguercio.git"
+  },
+  "author": "Daniel Naranjo Merino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daniel-nm/alejandro-loguercio/issues"
+  },
+  "homepage": "https://github.com/daniel-nm/alejandro-loguercio#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
