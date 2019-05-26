@@ -1,0 +1,24 @@
+/************************************************************************** 
+/ GOOGLE FONTS
+**************************************************************************/
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+// Base styles
+@import 'base/reset';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/typograhpy';
+@import 'base/helper';
+
+// Components
+@import 'components/navigation';
+@import 'components/section';
+@import 'components/footer';
+@import 'components/links';
+@import 'components/btns';
+@import 'components/imgs';
+@import 'components/audio';
+
+// Pages
+@import 'pages/homepage';
