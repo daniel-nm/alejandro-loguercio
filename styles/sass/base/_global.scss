@@ -1,0 +1,94 @@
+/*************************************************
+* GLOBAL
+*************************************************/
+
+/* 
+Layout 
+************************/
+.container {
+  width: 82%;
+  margin: 0 auto;
+}
+
+/* 
+Margins 
+************************/
+.margin {
+  margin: 3rem 0 !important;
+
+  &--bottom {
+    margin-bottom: 4rem !important;
+  }
+}
+
+
+/*
+Transitions 
+************************/
+/* Opacity applied to main menu transition  */
+.opacity {
+  z-index: 3 !important;
+  opacity: 1 !important;
+  transition: opacity 300ms !important;
+}
+
+/* Transition effects for navigation links */
+.move__in {
+  transform: translateY(0%) !important;
+  transition: all 1s;
+  opacity: 1 !important;
+
+  &--1 {
+    transition-delay: 300ms;
+  }
+  &--2 {
+    transition-delay: 600ms;
+  }
+  &--3 {
+    transition-delay: 900ms;
+  }
+  &--4 {
+    transition-delay: 1200ms;
+  }
+  &--5 {
+    transition-delay: 1500ms;
+  }
+  &--6 {
+    transition-delay: 1800ms;
+  }
+}
+
+/* 
+Prevent body from scrolling when main nav is opened
+************************/
+.no__scroll {
+  overflow: hidden;
+}
+
+/* 
+Line (for decoration purposes)
+************************/
+.ruler {
+  & > .line {
+    display: inline-block;
+    height: rem(3,16); /* 3px / 16px */
+    width: rem(50,16); /* 50px / 16px */
+    background-color: $blue;
+  }
+
+  &>.square {
+    display: inline-block;
+    height: rem(3,16); /* 3px / 16px */
+    width: rem(3,16); /* 3px / 16px */
+    background-color: $blue;
+  }
+}
+
+/* 
+Line divider (decoration purposes)
+************************/
+.section_divider {
+  background-color: $light-grey;
+  height: rem(1,16); /* 1px / 16px */
+  width: 100%;
+}
