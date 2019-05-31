@@ -1,0 +1,5 @@
+// Calcula rem
+@function rem($fontSize, $fontBase) {
+  $rem : ($fontSize/$fontBase) * 1rem;
+  @return $rem;
+}
