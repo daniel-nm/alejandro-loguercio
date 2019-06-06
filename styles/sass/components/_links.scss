@@ -1,0 +1,22 @@
+/*************************************************
+* LINKS
+*************************************************/
+
+/* Skip to content link 
+************************/
+.skip-content {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  &:focus {
+    right: auto;
+  }
+}
+
+/* 
+Active class for navigation links 
+************************/
+.link--active {
+  font-weight: 700;
+  text-decoration: underline !important;
+}
