@@ -2,21 +2,193 @@
 * LINKS
 *************************************************/
 
-/* Skip to content link 
+/* 
+Link - base styles 
 ************************/
-.skip-content {
-  position: absolute;
-  top: 0;
-  right: 100%;
-  &:focus {
-    right: auto;
+.link {
+  font-size: rem(16, 16);
+  /* 16px / 16px */
+  text-decoration: none;
+  background-image: linear-gradient(to right, $dark-grey, $dark-grey);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 100% rem(1, 16);
+  /* 1px / 16px */
+  transition: background-size $trans-fast ease;
+  padding-bottom: rem(1.5, 16);
+  /* 1.5px / 16px */
+
+  &:visited {
+    color: $dark-grey;
   }
+
+  &:hover,
+  &:active {
+    color: $blue;
+    background-image: linear-gradient(to right, $blue, $blue);
+    background-size: 20% rem(2, 16);
+    /* 2px / 16px */
+    transition: color $trans-slow, background-size $trans-slow, background-image $trans-slow;
+
+  }
+
+  &:focus {
+    outline-color: $blue;
+    outline-style: dotted;
+    outline-offset: 0.5rem;
+  }
+
+  /* Skip to content link 
+  ************************/
+  &--skip {
+    position: absolute;
+    top: 0;
+    right: 100%;
+
+    &:focus {
+      right: auto;
+    }
+  }
+
+  /* Open/Close menu links
+  ************************/
+  &--openBtn,
+  &--closeBtn {
+
+    &>svg {
+      vertical-align: middle;
+    }
+
+    &:hover,
+    &:active {
+      .link__icon {
+        stroke: $blue;
+        stroke-width: 2;
+      }
+    }
+
+    &::after {
+      display: none;
+    }
+
+    @include laptop {
+      display: none;
+    }
+  }
+
+  &--menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2.5rem;
+    font-family: $sans-serif;
+    text-transform: uppercase;
+    transform: translateY(40%);
+    opacity: 0;
+
+    @include laptop {
+      all: unset;
+    }
+
+    & a {
+      width: 100%;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: rem(24, 16);
+
+      @include laptop {
+        font-size: rem(16, 16);
+        font-weight: 400;
+        margin-left: rem(32, 16);
+        font-family: $sans-serif;
+      }
+      @include desktop {
+        font-size: rem(18,16);
+      }
+    }
+
+    &:first-child {
+      text-align: right;
+      margin-right: 2.5rem;
+      
+      & a {
+        font-weight: 400;
+        text-transform: none;
+        width: auto;
+        font-size: rem(16, 16);
+      }
+    }
+    &:last-child {
+      text-align: right;
+      & a {
+        font-size: rem(16, 16);
+        width: auto;
+
+        @include laptop {
+          // padding-left: 4rem;
+        }
+      }
+    }
+
+  }
+
+  /* 
+  Active/Not-active class for navigation links 
+  ************************/
+  &--active {
+    font-weight: 700;
+  }
+  &--not-active {
+    color: $medium-grey;
+    font-weight: 400;
+  }
+
+
 }
 
-/* 
-Active class for navigation links 
-************************/
-.link--active {
-  font-weight: 700;
-  text-decoration: underline !important;
-}
+/* Main nav menu links */
+// .link-menu {
+//   transform: translateY(40%);
+//   opacity: 0;
+// }
+
+// .link-menu a {
+//   color: $blue;
+//   font-family: 'Merriweather', serif;
+//   background: none;
+//   text-transform: uppercase;
+
+//   &:visited {
+//     color: $blue;
+//   }
+
+//   &:hover,
+//   &:active {
+//     color: $dark-grey;
+//     background: none;
+//     transition: color 300ms;
+//   }
+// }
+
+/* Footer links */
+// .sitemap_link {
+//   color: $medium-grey;
+//   text-decoration: none;
+//   text-transform: uppercase;
+//   font-size: 0.75rem;
+//   font-family: 'Merriweather', serif;
+// }
+
+// .sitemap_projects a {
+//   text-decoration: none;
+//   font-size: 0.85rem;
+//   font-family: 'Roboto', sans-serif;
+// }
+
+// .social_link {
+//   color: $dark-grey;
+//   text-decoration: none;
+//   font-size: 0.8125rem;
+// }

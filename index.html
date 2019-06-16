@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Meta data -->
   <meta charset="UTF-8">
@@ -11,44 +12,49 @@
   <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" href="styles/css/styles.css">
 </head>
+
 <body class="container">
   <!-- Skip to link content -->
-  <a id="skipContent" class="skip-content" href="#main">Skip to main content</a>
-    <!-- Main navigation -->
-    <nav class="nav" role="navigation" aria-label="Main menu">
-      <!-- Logo - acts as homepage link  -->
-      <a href="/index.html" aria-current="page" class="nav__logo">alejandro<span class="last--name">loguercio</span></a>
-      <!-- Main menu -->
-      <div class="nav__menu">
-        <a href="#" class="link link--openBtn">
-          Menu
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="6" viewBox="0 0 20 6">
-            <g transform="translate(-321 -23.5)">
-              <line x2="20" transform="translate(321 24)" fill="none" stroke="#11161e" stroke-width="1" />
-              <line x2="15" transform="translate(326 29)" fill="none" stroke="#11161e" stroke-width="1" />
-            </g>
-          </svg>
-        </a>
-        <ul class="nav__menu__overlay">
-          <li class="nav__menu__overlay__link"><a href="#" class="link link--closeBtn">
-              Close
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="26" viewBox="0 0 24 24">
-                <path
-                  d="M19.293 3.293L12 10.586 4.707 3.293 3.293 4.707 10.586 12 3.293 19.293 4.707 20.707 12 13.414 19.293 20.707 20.707 19.293 13.414 12 20.707 4.707z" />
-              </svg>
-            </a></li>
-          <li class="nav__menu__overlay__link"><a href="#" class="link">Bio</a></li>
-          <li class="nav__menu__overlay__link"><a href="#" class="link">Projects</a></li>
-          <li class="nav__menu__overlay__link"><a href="#" class="link">Photos</a></li>
-          <li class="nav__menu__overlay__link"><a href="#" class="link">Contact</a></li>
-          <li class="nav__menu__overlay__link">
-            <a href="#" class="link link--active">English</a>
-            <span> / </span>
-            <a href="#" class="link"> German</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <a id="skipContent" class="link link--skip" href="#main">Skip to main content</a>
+  <!-- Main navigation -->
+  <nav class="nav" role="navigation" aria-label="Main menu">
+    <!-- Logo - acts as homepage link  -->
+    <a href="/index.html" aria-current="page" class="nav__logo">alejandro<span
+        class="nav__logo--last-name">loguercio</span></a>
+    <!-- Main menu -->
+    <div class="nav__menu">
+      <a href="#" class="link link--openBtn">
+        Menu
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="6" viewBox="0 0 20 6">
+          <g transform="translate(-321 -23.5)">
+            <line class="link link__icon" x2="20" transform="translate(321 24)" fill="none" stroke="#11161e"
+              stroke-width="1" />
+            <line class="link link__icon" x2="15" transform="translate(326 29)" fill="none" stroke="#11161e"
+              stroke-width="1" />
+          </g>
+        </svg>
+      </a>
+      <ul class="nav__menu__overlay">
+        <li class="link--menu"><a href="#" class="link link--closeBtn">
+            Close
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="26" viewBox="0 0 24 24">
+              <path
+                d="M19.293 3.293L12 10.586 4.707 3.293 3.293 4.707 10.586 12 3.293 19.293 4.707 20.707 12 13.414 19.293 20.707 20.707 19.293 13.414 12 20.707 4.707z" />
+            </svg>
+          </a></li>
+        <li class="link--menu"><a class="link" href="#">Bio</a></li>
+        <li class="link--menu"><a class="link" href="#">Projects</a></li>
+        <li class="link--menu"><a class="link" href="#">Photos</a></li>
+        <li class="link--menu"><a class="link" href="#">Contact</a></li>
+        <li class="link--menu"><a class="link" href="#"><span class="link--active">EN</span> / <span class="link--not-active">DE</span></a></li>
+      </ul>
+    </div>
+  </nav>
 
+
+
+
+  <script src="js/main.js"></script>
 </body>
+
 </html>

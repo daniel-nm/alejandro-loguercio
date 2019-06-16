@@ -1,0 +1,39 @@
+/*************************************************
+* TRANSITIONS
+*************************************************/
+
+/*
+Transitions 
+************************/
+/* Opacity applied to main menu transition  */
+.opacity {
+  z-index: 3 !important;
+  opacity: 1 !important;
+  transition: opacity 300ms !important;
+}
+
+/* Transition effects for navigation links */
+.move__in {
+  transform: translateY(0%) !important;
+  transition: all 1s;
+  opacity: 1 !important;
+
+  &--1 {
+    transition-delay: 300ms;
+  }
+  &--2 {
+    transition-delay: 600ms;
+  }
+  &--3 {
+    transition-delay: 900ms;
+  }
+  &--4 {
+    transition-delay: 1200ms;
+  }
+  &--5 {
+    transition-delay: 1500ms;
+  }
+  &--6 {
+    transition-delay: 1800ms;
+  }
+}

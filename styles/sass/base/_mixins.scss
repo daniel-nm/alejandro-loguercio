@@ -1,5 +1,32 @@
+//////////////////////
+// Functions
+//////////////////////
+
 // Calcula rem
+/////////////////
 @function rem($fontSize, $fontBase) {
   $rem : ($fontSize/$fontBase) * 1rem;
   @return $rem;
+}
+
+//////////////////////
+// Mixins
+//////////////////////
+
+// Media queries
+/////////////////
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media (min-width: #{$laptop}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
 }

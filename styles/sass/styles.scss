@@ -5,10 +5,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 
 // Base styles
-@import 'base/reset';
 @import 'base/variables';
 @import 'base/mixins';
 @import 'base/global';
+@import 'base/layout';
 @import 'base/typography';
 
 // Components
@@ -19,6 +19,7 @@
 @import 'components/btns';
 @import 'components/imgs';
 @import 'components/audio';
+@import 'components/transitions';
 
 // Pages
 @import 'pages/homepage';

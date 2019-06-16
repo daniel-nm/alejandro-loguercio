@@ -1,10 +1,19 @@
-// Page colors
-$dark-grey: #11161E;
+// Colors
+$dark-grey:   #11161E;
 $medium-grey: #6A7180;
-$light-grey: #eee;
-$blue: #2266A6;
-$white: #fff;
+$light-grey:  #eee;
+$blue:        #2266A6;
+$white:       #fff;
 
 // Typography
-$serif: 'Merriweather', serif;
-$sans-serif: 'Roboto', sans-serif;
+$serif:        'Merriweather', serif;
+$sans-serif:   'Roboto', sans-serif;
+
+// Transition
+$trans-fast:   300ms;
+$trans-slow:   600ms;
+
+// Responsive 
+$tablet:       48em;
+$laptop:       64em;
+$desktop:      120em;

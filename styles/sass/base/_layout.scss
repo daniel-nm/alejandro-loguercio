@@ -1,0 +1,22 @@
+/*************************************************
+* LAYOUT
+*************************************************/
+
+/* 
+Layout 
+************************/
+.container {
+  width: 82%;
+  margin: 0 auto;
+}
+
+/* 
+Margins 
+************************/
+.margin {
+  margin: 3rem 0 !important;
+
+  &--bottom {
+    margin-bottom: 4rem !important;
+  }
+}

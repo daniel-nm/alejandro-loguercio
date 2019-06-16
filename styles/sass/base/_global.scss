@@ -3,59 +3,25 @@
 *************************************************/
 
 /* 
-Layout 
+Max-width for images
 ************************/
-.container {
-  width: 82%;
-  margin: 0 auto;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* 
-Margins 
+Box sizing property
 ************************/
-.margin {
-  margin: 3rem 0 !important;
-
-  &--bottom {
-    margin-bottom: 4rem !important;
-  }
+* {
+  box-sizing: border-box;
 }
 
-
-/*
-Transitions 
+/* 
+Default color for all links
 ************************/
-/* Opacity applied to main menu transition  */
-.opacity {
-  z-index: 3 !important;
-  opacity: 1 !important;
-  transition: opacity 300ms !important;
-}
-
-/* Transition effects for navigation links */
-.move__in {
-  transform: translateY(0%) !important;
-  transition: all 1s;
-  opacity: 1 !important;
-
-  &--1 {
-    transition-delay: 300ms;
-  }
-  &--2 {
-    transition-delay: 600ms;
-  }
-  &--3 {
-    transition-delay: 900ms;
-  }
-  &--4 {
-    transition-delay: 1200ms;
-  }
-  &--5 {
-    transition-delay: 1500ms;
-  }
-  &--6 {
-    transition-delay: 1800ms;
-  }
+a {
+  color: $dark-grey;
 }
 
 /* 
