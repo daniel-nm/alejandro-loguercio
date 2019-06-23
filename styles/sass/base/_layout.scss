@@ -8,15 +8,56 @@ Layout
 .container {
   width: 82%;
   margin: 0 auto;
+
+  @include tablet {
+    &--outer {
+      width: 95%;
+      max-width: 90%;
+    }
+    &--inner {
+      max-width: rem(700,16);
+    }
+  }
+
+  @include laptop {
+    &--outer {
+      max-width: 69.75rem;
+    }
+    &--inner {
+      max-width: rem(850,16);
+    }
+  }
 }
+
+.section {
+  &__image {
+    display: block;
+
+    @include tablet {
+      margin: 0 auto;
+    }
+  }
+
+}
+
 
 /* 
 Margins 
 ************************/
 .margin {
-  margin: 3rem 0 !important;
-
-  &--bottom {
-    margin-bottom: 4rem !important;
+  &__b-extra-small {
+    margin-bottom: rem(12,16); /* 12px / 16px*/
+  }
+  &__b-small {
+    margin-bottom: rem(20,16); /* 20px / 16px*/
+  }
+  &__b-normal {
+    margin-bottom: rem(32,16); /* 32px / 16px*/
+  }
+  &__b-large {
+    margin-bottom: rem(48,16); /* 48px / 16px*/
+  }
+  &__b-extra-large {
+    margin-bottom: rem(64,16); /* 64px / 16px*/
   }
 }

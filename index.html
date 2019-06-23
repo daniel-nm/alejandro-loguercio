@@ -13,11 +13,11 @@
   <link rel="stylesheet" href="styles/css/styles.css">
 </head>
 
-<body class="container">
+<body>
   <!-- Skip to link content -->
   <a id="skipContent" class="link link--skip" href="#main">Skip to main content</a>
   <!-- Main navigation -->
-  <nav class="nav" role="navigation" aria-label="Main menu">
+  <nav class="nav container container--outer" role="navigation" aria-label="Main menu">
     <!-- Logo - acts as homepage link  -->
     <a href="/index.html" aria-current="page" class="nav__logo">alejandro<span
         class="nav__logo--last-name">loguercio</span></a>
@@ -46,10 +46,37 @@
         <li class="link--menu"><a class="link" href="#">Projects</a></li>
         <li class="link--menu"><a class="link" href="#">Photos</a></li>
         <li class="link--menu"><a class="link" href="#">Contact</a></li>
-        <li class="link--menu"><a class="link" href="#"><span class="link--active">EN</span> / <span class="link--not-active">DE</span></a></li>
+        <li class="link--menu"><a class="link" href="#"><span class="link--active">EN</span> / <span
+              class="link--not-active">DE</span></a></li>
       </ul>
     </div>
   </nav>
+
+  <!-- Main content -->
+  <main id="main">
+    <section class="section margin__b-extra-large">
+      <picture class="section__image margin__b-normal container--outer">
+        <source class="section__image" media="(max-width: 37.5em)"
+          srcset="/media/img/alejandro-loguercio/alejandro-loguercio-holding-violin-tablet.jpg">
+        <source class="section__image" media="(min-width: 37.5625em)"
+          srcset="/media/img/alejandro-loguercio/alejandro-loguercio-holding-violin.jpeg">
+        <img class="section__image" src="/media/img/alejandro-loguercio/alejandro_loguercio_holding_violin_tablet.jpg"
+          alt="Alejandro Loguercio">
+      </picture>
+      <div class="container container--outer">
+        <h1 class="section__title margin__b-extra-small">Violinist</h1>
+        <p class="section__paragraph margin__b-extra-small">Celebrated for his musical exuberance and virtuosity,
+          Venezuelan violinist Alejandro Loguercio leads a dynamic performance career as a soloist, chamber and orchestral musician.
+        </p>
+        <div class="ruler margin__b-extra-small">
+          <span class="square square-1"></span>
+          <span class="square square-2"></span>
+          <span class="line"></span>
+        </div>
+        <a href="#" class="link">Read more</a>
+      </div>
+    </section>
+  </main>
 
 
 

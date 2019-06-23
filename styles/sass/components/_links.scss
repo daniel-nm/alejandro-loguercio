@@ -18,6 +18,10 @@ Link - base styles
   padding-bottom: rem(1.5, 16);
   /* 1.5px / 16px */
 
+  @include tablet {
+    font-size: 1.1rem;
+  }
+
   &:visited {
     color: $dark-grey;
   }
@@ -75,6 +79,9 @@ Link - base styles
       display: none;
     }
   }
+
+   /* Menu links
+  ************************/
 
   &--menu {
     flex: 1;
@@ -148,29 +155,7 @@ Link - base styles
 
 }
 
-/* Main nav menu links */
-// .link-menu {
-//   transform: translateY(40%);
-//   opacity: 0;
-// }
 
-// .link-menu a {
-//   color: $blue;
-//   font-family: 'Merriweather', serif;
-//   background: none;
-//   text-transform: uppercase;
-
-//   &:visited {
-//     color: $blue;
-//   }
-
-//   &:hover,
-//   &:active {
-//     color: $dark-grey;
-//     background: none;
-//     transition: color 300ms;
-//   }
-// }
 
 /* Footer links */
 // .sitemap_link {

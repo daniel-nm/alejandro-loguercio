@@ -3,6 +3,14 @@
 *************************************************/
 
 /* 
+Root element 
+************************/
+html {
+  font-size: 100%;
+  line-height: 1.6875;
+}
+
+/* 
 Max-width for images
 ************************/
 img {
@@ -18,6 +26,14 @@ Box sizing property
 }
 
 /* 
+Paragraph reset
+************************/
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* 
 Default color for all links
 ************************/
 a {
@@ -29,6 +45,7 @@ Prevent body from scrolling when main nav is opened
 ************************/
 .no__scroll {
   overflow: hidden;
+  position:fixed;
 }
 
 /* 
