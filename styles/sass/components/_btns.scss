@@ -1,0 +1,26 @@
+.btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.75rem 0;
+  text-align: center;
+  text-decoration: none;
+  width: rem(180,16); /* 140px / 16px*/
+  
+
+  &--primary {
+    border: 1px solid $blue;
+    color: $blue;
+    background: linear-gradient(to right, $blue 50%, $white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background 300ms ease-out, color 300ms ease-out;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-position: left bottom;
+      color: $white;
+    }
+  }
+}

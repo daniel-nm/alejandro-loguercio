@@ -76,61 +76,61 @@
 
 // Audio player
 // Define audio player variables
-// const media = document.getElementById('audio');
-// let btnPlay = document.querySelector('#playAudio'),
-//     percentage = document.querySelector('#percentage'),
-//     time = document.querySelector('#currentTime'),
-//     seekObj = document.querySelector('#seekObj');
+const media = document.getElementById('audio');
+let btnPlay = document.querySelector('#playAudio'),
+    percentage = document.querySelector('#percentage'),
+    time = document.querySelector('#currentTime'),
+    seekObj = document.querySelector('#seekObj');
 
-// // Toggle audio play
-// function togglePlay() {
-//   if (media.paused === false) {
-//     media.pause();
-//     btnPlay.classList.toggle('pause');
-//   } else {
-//     media.play();
-//     btnPlay.classList.toggle('pause');
-//   }
-// }
+// Toggle audio play
+function togglePlay() {
+  if (media.paused === false) {
+    media.pause();
+    btnPlay.classList.toggle('pause');
+  } else {
+    media.play();
+    btnPlay.classList.toggle('pause');
+  }
+}
 
-// function calculatePercentPlayed() {
-//   let percCalc = (media.currentTime / media.duration).toFixed(2) * 100;
-//   percentage.style.width = `${percCalc}%`;
-// }
+function calculatePercentPlayed() {
+  let percCalc = (media.currentTime / media.duration).toFixed(2) * 100;
+  percentage.style.width = `${percCalc}%`;
+}
 
-// function calculateCurrentValue(currentTime) {
-//   const currentMinute = parseInt(currentTime / 60) % 60;
-//   const currentSecondsLong = currentTime % 60;
-//   const currentSeconds = currentSecondsLong.toFixed();
-//   const currentTimeFormatted = `${currentMinute < 10 ? `0${currentMinute}` : currentMinute}:${
-// currentSeconds < 10 ? `0${currentSeconds}` : currentSeconds
-// }`;
+function calculateCurrentValue(currentTime) {
+  const currentMinute = parseInt(currentTime / 60) % 60;
+  const currentSecondsLong = currentTime % 60;
+  const currentSeconds = currentSecondsLong.toFixed();
+  const currentTimeFormatted = `${currentMinute < 10 ? `0${currentMinute}` : currentMinute}:${
+currentSeconds < 10 ? `0${currentSeconds}` : currentSeconds
+}`;
 
-//   return currentTimeFormatted;
-// }
+  return currentTimeFormatted;
+}
 
-// function initProgressBar() {
-//   const currentTime = calculateCurrentValue(media.currentTime);
-//   time.innerHTML = currentTime;
-//   seekObj.addEventListener('click', seek);
+function initProgressBar() {
+  const currentTime = calculateCurrentValue(media.currentTime);
+  time.innerHTML = currentTime;
+  seekObj.addEventListener('click', seek);
 
-//   media.onended = () => {
-//     btnPlay.classList.remove('pause');
-//     percentage.style.width = 0;
-//     time.innerHTML = '00:00';
-//   };
+  media.onended = () => {
+    btnPlay.classList.remove('pause');
+    percentage.style.width = 0;
+    time.innerHTML = '00:00';
+  };
 
-//   function seek(e) {
-//     const percent = e.offsetX / this.offsetWidth;
-//     media.currentTime = percent * media.duration;
-//   }
+  function seek(e) {
+    const percent = e.offsetX / this.offsetWidth;
+    media.currentTime = percent * media.duration;
+  }
 
-//   calculatePercentPlayed();
-// }
+  calculatePercentPlayed();
+}
 
 
-// btnPlay.addEventListener('click', togglePlay);
-// media.addEventListener('timeupdate', initProgressBar);
+btnPlay.addEventListener('click', togglePlay);
+media.addEventListener('timeupdate', initProgressBar);
 
 
 

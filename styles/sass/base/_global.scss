@@ -66,12 +66,3 @@ Line (for decoration purposes)
     background-color: $blue;
   }
 }
-
-/* 
-Line divider (decoration purposes)
-************************/
-.section_divider {
-  background-color: $light-grey;
-  height: rem(1,16); /* 1px / 16px */
-  width: 100%;
-}

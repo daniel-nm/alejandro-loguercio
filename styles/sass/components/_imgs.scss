@@ -1,0 +1,40 @@
+.section {
+  &__image {
+    display: block;
+
+    @include tablet {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &--project {
+      height: rem(250,16); /* 250px / 16px */
+      width: 100%;
+      object-fit: cover;
+      object-position: top;
+
+      @include tablet {
+        height: rem(350,16); /* 350px / 16px */
+      }
+    }
+  }
+}
+
+.press {
+  &__image {
+    display: none;
+    @include tablet {
+      display: block;
+      background-image: url(/media/img/alejandro-loguercio/alejandro-loguercio-sitting-smiling.jpeg);
+      background-position: top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: rem(355,16); /* 355px / 16px */
+      width: 100%;
+    }
+    @include laptop {
+      background-position: center;
+      height: rem(650,16); /* 650px / 16px */
+    }
+  }
+}
