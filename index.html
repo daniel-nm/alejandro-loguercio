@@ -202,30 +202,29 @@
     </section>
 
     <!-- Audio section -->
-    <section class="section margin__b-extra-large">
+    <section class="section section--overflow margin__b-extra-large">
       <div class="section__header margin__b-large">
-        <h2 class="section__title container container--outer">Press</h2>
+        <h2 class="section__title container container--outer">Audio</h2>
         <div class="ruler container container--outer">
           <span class="square square--1"></span>
           <span class="square square--2"></span>
           <span class="line"></span>
         </div>
       </div>
-      <div class="audio">
-        <div class="audio__img"></div>
-        <div class="audio__info container container--outer">
+      <div class="audio container container--outer">
+        <div class="audio__img margin__b-small"></div>
+        <div class="audio__info margin__b-extra-small">
           <h2 class="section__title">Pajarillo con Vibrato</h2>
           <p class="section__paragraph">Composed by Alejandro Loguercio</p>
         </div>
-        <div class="audio__player container container--outer">
+        <div class="audio__player">
           <audio id="audio" preload="metadata">
             <source src="/media/audio/pajarillo_con_vibrato.mp3" type="audio/mp3">
             <source src="/media/audio/pajarillo_con_vibrato.ogg" type="audio/ogg">
             <p>Your browser doesn't support HTML5 audio. Here is
               a <a href="/media/audio/pajarillo_con_vibrato.mp3">link to the audio</a> instead.</p>
           </audio>
-          <div class="player-controls">
-            <button id="playAudio" class="audio__control play"></button>
+          <div class="audio__player-controls">
             <div class="audio__tracker">
               <p><small id="currentTime">00:00</small></p>
               <div id="seekObjContainer">
@@ -234,15 +233,14 @@
                 </div>
               </div>
             </div>
+            <button id="playAudio" class="audio__control play"></button>
           </div>
         </div>
       </div>
-
-
-
     </section>
 
-
+    <!-- Divider -->
+    <div class="section__divider margin__b-normal"></div>
 
   </main>
 

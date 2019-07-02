@@ -1,52 +1,96 @@
 /* 
 AUDIO
 ******************/
-.audio__section {
+.audio {
   position: relative;
-  margin-bottom: 5.125rem; /* 82px / 16px */
-  & .section_title {
-    margin-top: 2rem;
-    margin-bottom: 0.75rem;
+
+  &__control {
+    cursor: pointer;
+    position: absolute;
+    top: 61%;
+    right: 0%;
+    border: none;
+    background-color: $blue;
+    text-align: center;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include tablet {
+      top: 68%;
+    }
+
+    @include laptop {
+      position: static;
+    }
+  }
+
+  &__tracker {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include laptop {
+      flex: 1;
+      justify-content: unset;
+    }
+  }
+  &__info {
+    @include laptop {
+      padding-top: 120px;
+    }
+  }
+
+  &__player-controls {
+    @include laptop {
+      background-color: $light-grey;
+      display: flex;
+      padding: 1.25rem 2.5rem /* 20px ,  40px */
+    }
   }
 }
-.audio__control {
-  cursor: pointer;
-  position: absolute;
-  top: 58%;
-  right: 9%;
-  border: none;
-  background-color: $blue;
-  text-align: center;
-  border-radius: 50%;
-  height: 3rem;
-  width: 3rem;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+
 .play {
   background-image: url(/media/img/icons/bx-play.svg);
 }
+
 .pause {
-  background-image: url(/media/img/icons/img/bx-pause.svg);
+  background-image: url(/media/img/icons/bx-pause.svg);
 }
-.audio__tracker {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+#currentTime {
+  color: $blue;
+  @include laptop {
+    margin-right: 1rem;
+    font-size: rem(16,16); /* 16px / 16px */
+    font-weight: 300;
+  }
 }
+
 #seekObjContainer {
   width: 80%;
   height: 5px;
+
+  @include laptop {
+    margin-right: rem(16,16);
+    width: 100%;
+  }
 }
 
 #seekObj {
-  position:relative;
+  position: relative;
   width: 100%;
   height: 100%;
   background-color: $light-grey;
   border: 5px;
+
+  @include laptop {
+    background-color: $white;
+  }
 }
- 
+
 #percentage {
   position: absolute;
   left: 0;

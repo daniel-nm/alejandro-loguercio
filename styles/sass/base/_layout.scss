@@ -32,6 +32,10 @@ Layout
 }
 
 .section {
+  &--overflow {
+    overflow: hidden;
+  }
+
   &__header {
     background-color: $light-grey;
     display: flex;
