@@ -1,0 +1,27 @@
+.footer {
+  position: relative;
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__sitemap,
+  &__social {
+    @include tablet {
+      margin-bottom: 0;
+    }
+  }
+  
+
+  &__copyright {
+    @include tablet {
+      text-align: right;
+      & .btn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}

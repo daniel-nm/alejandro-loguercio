@@ -5,7 +5,7 @@
   padding: 0.75rem 0;
   text-align: center;
   text-decoration: none;
-  width: rem(180,16); /* 140px / 16px*/
+  width: rem(180,16); /* 180px / 16px*/
   
 
   &--primary {
@@ -22,5 +22,9 @@
       background-position: left bottom;
       color: $white;
     }
+  }
+
+  &--small {
+    width: rem(64,16); /* 64px / 16px*/
   }
 }
