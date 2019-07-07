@@ -1,4 +1,11 @@
 /* 
+JUMBOTRON
+******************/
+.jumbotron {
+  position: relative;
+}
+
+/* 
 PROJECTS
 ******************/
 .project {
@@ -13,11 +20,6 @@ PROJECTS
 
   &--secondary {
     @include tablet {
-      &>.section__image--project {
-        margin-bottom: rem(12, 16);
-        /* 12px / 16px*/
-      }
-
       &>.container--outer {
         display: flex;
         flex-direction: column;

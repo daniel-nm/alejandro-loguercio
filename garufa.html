@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Alejandro Loguercio - Garufa</title>
+  <meta name="description" content="Official site of Alejandro Loguercio, violinist and composer">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Alejandro, Loguercio, Violinist, Musician, Composer, Geiger, Komponist, Musiker, Violinista, Compositor, Músico">
+  <meta name="author" content="Daniel Naranjo Merino">
+  <meta name="robots" content="noindex">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,700" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Touch Icons - iOS and Android 2.1+ 152x152 pixels in size. -->
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Firefox, Chrome, Safari, IE 11+ and Opera. Different sizes. -->
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+</head>
+
+<body id="top" class="wrapper">
+  <header class="header">
+    <nav class="nav" role="navigation">
+      <a href="/" class="logo"><img src="img/logo.svg" alt="Alejandro Loguercio"></a>
+      <div class="nav__menu">
+        <a id="open-nav" onclick="openNav()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+            <path class="menu__icon" d="M4 6h16v2H4zM8 11h12v2H8zM13 16h7v2h-7z" /></svg>
+          Menu
+        </a>
+      </div>
+      <div id="myNav" class="nav__overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay__content">
+          <a href="/" class="nav__link"><svg class="nav__link__icon" xmlns="http://www.w3.org/2000/svg" width="24"
+              height="24">
+              <path fill="none" d="M6 12v8h2v-5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v5h2v-8c0-.429.27-.794.649-.937L12 4.414l-6.649 6.649c.379.143.649.508.649.937z" />
+              <path fill="none" d="M10 16h4v4h-4z" />
+              <path d="M3 13h1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm7 7v-4h4v4h-4zm2-15.586l6.649 6.649A1.002 1.002 0 0 0 18 12v8h-2v-5a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v5H6v-8c0-.429-.27-.794-.649-.937L12 4.414z" /></svg>
+            Home
+          </a>
+          <a href="biography" class="nav__link"><svg class="nav__link__icon" xmlns="http://www.w3.org/2000/svg"
+              width="24" height="24">
+              <path fill="none" d="M8 15c-2.253 0-4 1.613-4 3h8c0-1.359-1.784-3-4-3zM8 10c.883 0 1.5-.617 1.5-1.5S8.883 7 8 7s-1.5.617-1.5 1.5S7.117 10 8 10z" />
+              <path d="M15 11h7v2h-7zM16 15h6v2h-6zM14 7h8v2h-8zM3 20h10a1 1 0 0 0 1-1v-1c0-2.617-2.859-5-6-5-3.196 0-6 2.336-6 5v1a1 1 0 0 0 1 1zm5-5c2.216 0 4 1.641 4 3H4c0-1.387 1.747-3 4-3zM8 12c1.995 0 3.5-1.505 3.5-3.5S9.995 5 8 5 4.5 6.505 4.5 8.5 6.005 12 8 12zm0-5c.883 0 1.5.617 1.5 1.5S8.883 10 8 10s-1.5-.617-1.5-1.5S7.117 7 8 7z" /></svg>
+            Biography
+          </a>
+          <a href="concerts" class="nav__link"><svg class="nav__link__icon" xmlns="http://www.w3.org/2000/svg"
+              width="24" height="24">
+              <path fill="none" d="M19 20V8H5v12h14zm-4-9h2v2h-2v-2zm0 4h2v2h-2v-2zm-4-4h2v2h-2v-2zm0 4h2v2h-2v-2zm-4-4h2v2H7v-2zm2 4v2H7v-2h2z" />
+              <path d="M7 11h2v2H7zM7 15h2v2H7zM11 11h2v2h-2zM11 15h2v2h-2zM15 11h2v2h-2zM15 15h2v2h-2z" />
+              <path d="M4 22h16a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-3V2h-2v2H9V2H7v2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1zM19 8v12H5V8h14z" /></svg>
+            Concerts
+          </a>
+          <a href="projects" class="nav__link active"><svg class="nav__link__icon" xmlns="http://www.w3.org/2000/svg"
+              width="24" height="24">
+              <path fill="none" d="M18 18.5v-.061A1.505 1.505 0 0 0 16.5 17c-.831 0-1.507.676-1.507 1.507s.676 1.507 1.507 1.507 1.507-.676 1.507-1.507l-.001-.007H18zM9 14.5v-.074a1.505 1.505 0 0 0-3.007.068 1.508 1.508 0 0 0 3.013.006H9z" />
+              <path d="M16.5 15c-1.934 0-3.507 1.573-3.507 3.507s1.573 3.507 3.507 3.507 3.507-1.573 3.507-3.507c0-.023-.007-.045-.007-.067V8a.999.999 0 0 0-.515-.874l-9-5A1 1 0 0 0 9 3v8.336a3.467 3.467 0 0 0-1.5-.35c-1.934 0-3.507 1.573-3.507 3.507S5.566 18 7.5 18s3.507-1.573 3.507-3.507c0-.023-.007-.045-.007-.067V4.699l7 3.89v6.761a3.467 3.467 0 0 0-1.5-.35zm-9 1c-.831 0-1.507-.676-1.507-1.507s.676-1.507 1.507-1.507c.808 0 1.464.641 1.5 1.439v.075h.006A1.508 1.508 0 0 1 7.5 16zm9 4.014c-.831 0-1.507-.676-1.507-1.507S15.669 17 16.5 17c.808 0 1.464.641 1.5 1.439v.061h.006l.001.007c0 .831-.676 1.507-1.507 1.507z" /></svg>
+            Projects
+          </a>
+          <a href="photos" class="nav__link"><svg class="nav__link__icon" xmlns="http://www.w3.org/2000/svg" width="24"
+              height="24">
+              <path fill="none" d="M5 12h14v8H5z" />
+              <path d="M20 10H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V11a1 1 0 0 0-1-1zm-1 10H5v-8h14v8zM5 6h14v2H5zM7 2h10v2H7z" /></svg>
+            Photos
+          </a>
+          <a href="contact" class="nav__link"><svg class="nav__link__icon" xmlns="http://www.w3.org/2000/svg"
+              width="24" height="24">
+              <path fill="none" d="M6 7v13h14V4H6v3zm7 0c1.438 0 2.5 1.061 2.5 2.5S14.438 12 13 12s-2.5-1.061-2.5-2.5S11.563 7 13 7zm0 6c2.746 0 5 2.083 5 4H8c0-2 2.254-4 5-4z" />
+              <path d="M13 13c-2.746 0-5 2-5 4h10c0-1.917-2.254-4-5-4zM13 12c1.438 0 2.5-1.061 2.5-2.5S14.438 7 13 7s-2.5 1.061-2.5 2.5S11.563 12 13 12z" />
+              <path d="M21 2H5a1 1 0 0 0-1 1v4H2v2h2v2H2v2h2v2H2v2h2v4a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zm-1 18H6V4h14v16z" /></svg>
+            Contact
+          </a>
+          <div class="nav__language">
+            <a href="garufa" class="nav__link language--link"><b>En</b> </a>
+            <a href="de/garufa" class="nav__link language--link">De</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="garufa" class="section margin">
+    <h1 class="section__title">Garufa</h1>
+    <div class="ruler__block"></div>
+    <div class="group__info">
+      <img src="img/garufa/Garufa_members.jpeg" alt="Garufa">
+      <p>The ensemble "Garufa!" combines Tango with comedy and theater was formed in 2010 and consists of four members
+        one of whom is Alejandro Loguercio.</p>
+      <p>The ensemble writes and produces their programs independently in their unique an original style. In this way
+        these young and charismatic musicians have managed to perform in many of the largest concert halls of Europe
+        and South America.</p>
+      <p>For more information as well as videos, please visit the website: <a href="http://www.garufa.at/Garufa/Home.html">www.garufa.at</a>
+        .</p>
+    </div>
+    <iframe class="iframe" src="https://www.youtube.com/embed/VCYVpbpzfso?color=white&modestbranding=1&rel=0&theme=light"
+      frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <div class="other__projects">
+    <a href="acrosTrio" class="back">Previous project <span>Acros Trio</span></a>
+    <a href="maxSteiner" class="next">Next Project <span>Max Steiner</span></a>
+  </div>
+
+  <footer class="footer">
+    <a href="#top"><img class="logo" src="img/logo.svg" alt="Alejandro Loguercio"></a>
+    <div class="footer__copyright">
+      <a href="https://www.facebook.com/alejandro.loguercio?fref=ts" class="social">
+        <svg class="facebook" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+          <path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592	c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20	c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z" /></svg>
+      </a>
+      <a href="mailto:contact@alejandrologuercio.com?Subject=Email%20sent%20from%20alejandrologuercio.com" class="social">
+        <svg class="email" version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 32 32">
+          <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM8 8h16c0.286 0 0.563 0.061 0.817 0.177l-8.817 10.286-8.817-10.287c0.254-0.116 0.531-0.177 0.817-0.177zM6 22v-12c0-0.042 0.002-0.084 0.004-0.125l5.864 6.842-5.8 5.8c-0.045-0.167-0.069-0.34-0.069-0.517zM24 24h-16c-0.177 0-0.35-0.024-0.517-0.069l5.691-5.691 2.826 3.297 2.826-3.297 5.691 5.691c-0.167 0.045-0.34 0.069-0.517 0.069zM26 22c0 0.177-0.024 0.35-0.069 0.517l-5.8-5.8 5.865-6.842c0.003 0.041 0.004 0.083 0.004 0.125v12z"></path>
+        </svg>
+      </a>
+      <p class="section--p"><small>Websited designed and created by Daniel Naranjo</small></p>
+      <p class="section--p"><small>&copy; Alejandro Loguercio. All rights reserved</small></p>
+      <p class="section--p"><small>Photos by Amarilio Ramalho</small></p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

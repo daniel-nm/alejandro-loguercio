@@ -5,8 +5,9 @@
   padding: 0.75rem 0;
   text-align: center;
   text-decoration: none;
-  width: rem(180,16); /* 180px / 16px*/
-  
+  width: rem(180, 16);
+  /* 180px / 16px*/
+
 
   &--primary {
     border: 1px solid $blue;
@@ -22,9 +23,42 @@
       background-position: left bottom;
       color: $white;
     }
+
+    @include desktop {
+      font-size: rem(20,16); /* 20px , 16px */
+      padding: 1.25rem 0;
+      width: rem(250,16); /* 250px , 16px */
+    }
   }
 
   &--small {
-    width: rem(64,16); /* 64px / 16px*/
+    width: rem(64, 16);
+    /* 64px / 16px*/
+    @include desktop {
+      width: rem(96,16); /* 96px / 16px*/
+    }
   }
+
+  // &--circle {
+  //   @include laptop {
+  //     content: url(/media/img/icons/bx-chevron-down.svg);
+  //     position: absolute;
+  //     top: 50%;
+  //     left: 50%;
+  //     background-color: $white;
+  //     border-radius: 50%;
+  //     box-shadow: 2px 2px 2px 0px $dark-grey;
+  //     padding: 0.75rem;
+  //     width: auto;
+  //     transition: transform $trans-fast ease-in, opacity $trans-fast ease-in;
+
+  //     &:hover {
+  //       transform: translateY(5px);
+  //     }
+  //   }
+
+  //   @include desktop {
+  //     display: none;
+  //   }
+  // }
 }

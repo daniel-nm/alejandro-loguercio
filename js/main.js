@@ -133,12 +133,43 @@ btnPlay.addEventListener('click', togglePlay);
 media.addEventListener('timeupdate', initProgressBar);
 
 
+// Show/Hide scroll down btn on scroll
+// let scrollPos = 0;
+// const btnCircle = document.querySelector('.btn--circle');
 
+// function checkPosition() {
+//   console.log(btnCircle);
+//   let windowY = window.scrollY;
+//   if (windowY < scrollPos) {
+//     // Scrolling UP
+//     // btnCircle.classList.toggle('element__visible');
+//     btnCircle.classList.add('element__visible');
+//     btnCircle.classList.remove('element__hidden');
+//   } else {
+//     // Scrolling DOWN
+//     // btnCircle.classList.toggle('element__hidden');
+//     btnCircle.classList.add('element__hidden');
+//     btnCircle.classList.remove('element__visible');
+//   }
+//   scrollPos = windowY;
+// }
 
-  
+// function debounce(func, wait = 10, immediate = true) {
+//   let timeout;
+//   return function() {
+//     let context = this, args = arguments;
+//     let later = function() {
+//       timeout = null;
+//       if (!immediate) func.apply(context, args);
+//     };
+//     let callNow = immediate && !timeout;
+//     clearTimeout(timeout);
+//     timeout = setTimeout(later, wait);
+//     if (callNow) func.apply(context, args);
+//   };
+// };
 
-  // let year = new Date();
-  // document.querySelector('#year').innerHTML = year.getFullYear();
+// window.addEventListener('scroll', debounce(checkPosition));
 
 
 

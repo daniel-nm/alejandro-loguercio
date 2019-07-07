@@ -11,6 +11,10 @@ nav - base styles
   align-items: center;
   padding: 1rem 0;
 
+  @include laptop {
+    padding: 2rem 0;
+  }
+
   /* 
   nav - logo
   ************************/
@@ -37,11 +41,11 @@ nav - base styles
     }
 
     @include tablet {
-      font-size: rem(20, 16);
+      font-size: rem(20, 16); /* 20px / 16px */
     }
 
     @include desktop {
-      font-size: rem(24, 16);
+      font-size: rem(28, 16); /* 28px / 16px */
     }
 
   }

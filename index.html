@@ -8,18 +8,36 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Title -->
   <title>Alejandro Loguercio - Homepage</title>
+  <!-- Meta tags -->
+  <meta name="description" content="Official site of Alejandro Loguercio, violinist and composer">
+  <meta name="keywords"
+    content="Alejandro, Loguercio, Violinist, Musician, Composer, Geiger, Komponist, Musiker, Violinista, Compositor, Músico">
+  <meta name="author" content="Daniel Naranjo Merino">
   <!-- CSS -->
   <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" href="styles/css/styles.css">
+  <!-- Touch Icons - iOS and Android 2.1+ 152x152 pixels in size. -->
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Firefox, Chrome, Safari, IE 11+ and Opera. Different sizes. -->
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+  <!-- HTML5 shiv -->
+  <!--[if lt IE 9]>
+  	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
 </head>
 
 <body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
   <!-- Skip to link content -->
   <a id="skipContent" class="link link--skip" href="#main">Skip to main content</a>
   <!-- Main navigation -->
   <nav class="nav container container--outer" role="navigation" aria-label="Main menu">
     <!-- Logo - acts as homepage link  -->
-    <a href="/index.html" aria-current="page" class="nav__logo">alejandro<span
+    <a href="/" aria-current="page" class="nav__logo">alejandro<span
         class="nav__logo--last-name">loguercio</span></a>
     <!-- Main menu -->
     <div class="nav__menu">
@@ -42,11 +60,11 @@
                 d="M19.293 3.293L12 10.586 4.707 3.293 3.293 4.707 10.586 12 3.293 19.293 4.707 20.707 12 13.414 19.293 20.707 20.707 19.293 13.414 12 20.707 4.707z" />
             </svg>
           </a></li>
-        <li class="link--menu"><a class="link" href="#">Bio</a></li>
-        <li class="link--menu"><a class="link" href="#">Projects</a></li>
-        <li class="link--menu"><a class="link" href="#">Photos</a></li>
-        <li class="link--menu"><a class="link" href="#">Contact</a></li>
-        <li class="link--menu"><a class="link" href="#"><span class="link--active">EN</span> / <span class="link--not-active">DE</span></a></li>
+        <li class="link--menu"><a class="link" href="biography">Bio</a></li>
+        <li class="link--menu"><a class="link" href="projects">Projects</a></li>
+        <li class="link--menu"><a class="link" href="photos">Photos</a></li>
+        <li class="link--menu"><a class="link" href="contact">Contact</a></li>
+        <li class="link--menu"><a class="link" href="de/index"><span>DE</span></a></li>
       </ul>
     </div>
   </nav>
@@ -54,7 +72,7 @@
   <!-- Main content -->
   <main id="main">
     <!-- Jumbotron section -->
-    <section class="section margin__b-extra-large">
+    <section class="section jumbotron margin__b-extra-large">
       <picture class="section__image margin__b-normal container--outer">
         <source class="section__image" media="(max-width: 37.5em)"
           srcset="/media/img/alejandro-loguercio/alejandro-loguercio-holding-violin-tablet.jpg">
@@ -65,7 +83,8 @@
       </picture>
       <div class="container container--outer">
         <h1 class="section__title margin__b-extra-small">Violinist</h1>
-        <p class="section__paragraph margin__b-extra-small">Celebrated for his musical exuberance and virtuosity,
+        <p class="container--inner section__paragraph section__paragraph--big margin__b-extra-small">Celebrated for his
+          musical exuberance and virtuosity,
           Venezuelan violinist Alejandro Loguercio leads a dynamic performance career as a soloist, chamber and
           orchestral musician.
         </p>
@@ -74,12 +93,12 @@
           <span class="square square-2"></span>
           <span class="line"></span>
         </div>
-        <a href="#" class="link">Read more</a>
+        <a href="biography" class="link">Read more</a>
       </div>
     </section>
 
     <!-- Projects section -->
-    <section class="section margin__b-extra-large">
+    <section id="projects" class="section margin__b-extra-large">
       <!-- Section header -->
       <div class="section__header margin__b-large">
         <h2 class="section__title container container--outer">Projects</h2>
@@ -94,10 +113,11 @@
       <div class="project project--primary">
         <!-- TODO: best description of group in alt image -->
         <img src="/media/img/crosmopolitans/crosmopolitans.jpg" alt="Crosmopolitans group"
-          class="section__image section__image--project margin__b-normal container--outer">
+          class="section__image section__image--project margin__b-small container--outer">
         <div class="container container--outer">
           <h3 class="section__title margin__b-small"><span class="section__title-number">01</span>Crosmopolitans</h3>
-          <p class="section__paragraph margin__b-extra-small">The "Latin american classical crossover“ ensemble
+          <p class="container--inner section__paragraph margin__b-extra-small">The "Latin american classical crossover“
+            ensemble
             “Crossmopolitans” was founded
             and
             based on the idea of building bridges between classical and popular music.
@@ -108,20 +128,19 @@
             <span class="line"></span>
           </div>
           <div class="margin__b-normal">
-            <a href="#" class="link">Read More</a>
+            <a href="crosmopolitans" class="link">Read More</a>
           </div>
         </div>
       </div>
       <!-- Divider -->
       <div class="section__divider margin__b-normal"></div>
 
-      <!-- Acros Trio -->
-      <div class="section--flex container--outer">
+      <div class="section--flex container--outer margin__b-small">
+        <!-- Acros Trio -->
         <div class="project project--secondary">
-          <img class="section__image section__image--project margin__b-normal"
+          <img class="section__image section__image--project margin__b-small"
             src="/media/img/acros-trio/acros-trio-b&w.jpg"
-            alt="Acros Trio group. From left to right: Alejandro Loguercio, Andrés Añazco and Cäcilia Altenberger"
-            class="img">
+            alt="Acros Trio group. From left to right: Alejandro Loguercio, Andrés Añazco and Cäcilia Altenberger">
           <div class="container container--outer">
             <h3 class="section__title margin__b-small"><span class="section__title-number">02</span>Acros Trio</h3>
             <p class="section__paragraph margin__b-extra-small">Alejandro Loguercio is both the violinist and founder of
@@ -133,7 +152,7 @@
               <span class="line"></span>
             </div>
             <div class="margin__b-normal">
-              <a href="#" class="link">Read More</a>
+              <a href="acrosTrio" class="link">Read More</a>
             </div>
 
           </div>
@@ -142,11 +161,12 @@
         <div class="section__divider margin__b-normal"></div>
 
         <!-- Garufa -->
-        <div class="project project--secondary margin__b-extra-large">
+        <div class="project project--secondary">
           <!-- TODO: best description of group in alt image -->
           <img src="/media/img/garufa/garufa.jpg" alt="Garufa group"
-            class="section__image section__image--project margin__b-normal">
-          <div class="container container--outer">
+            class="section__image section__image--project margin__b-small">
+          <!-- <div class="container container--outer"> -->
+          <div>
             <h3 class="section__title margin__b-small"><span class="section__title-number">03</span>Garufa!</h3>
             <p class="section__paragraph margin__b-extra-small">The ensemble “Garufa!” combines Tango with comedy and
               theater was formed in 2010
@@ -158,14 +178,14 @@
               <span class="line"></span>
             </div>
             <div class="margin__b-normal">
-              <a href="#" class="link">Read More</a>
+              <a href="garufa" class="link">Read More</a>
             </div>
           </div>
         </div>
       </div>
       <!-- More Projects link -->
-      <div class="container margin-bottom">
-        <a href="#" class="btn btn--primary">View All Projects</a>
+      <div class="container">
+        <a href="projects" class="btn btn--primary">View All Projects</a>
       </div>
     </section>
 
@@ -250,18 +270,18 @@
     <section class="footer__sitemap margin__b-small">
       <h2 class="section__title">Sitemap</h2>
       <ul class="list">
-        <li class="list__item"><a class="link" href="#">Home</a></li>
-        <li class="list__item"><a class="link" href="#">Photos</a></li>
-        <li class="list__item"><a class="link" href="#">Bio</a></li>
-        <li class="list__item"><a class="link" href="#">Contact</a></li>
+        <li class="list__item"><a class="link" href="/">Home</a></li>
+        <li class="list__item"><a class="link" href="biography">Bio</a></li>
+        <li class="list__item"><a class="link" href="photos">Photos</a></li>
+        <li class="list__item"><a class="link" href="contact">Contact</a></li>
         <li class="list__item">
-          <a class="link" href="#">Projects</a>
+          <a class="link" href="projects">Projects</a>
           <ul class="list">
-            <li><a class="link--alternative" href="#">Crosmopolitans</a></li>
-            <li><a class="link--alternative" href="#">Acros Trio</a></li>
-            <li><a class="link--alternative" href="#">Garufa!</a></li>
-            <li><a class="link--alternative" href="#">Max Steiner Orchestra</a></li>
-            <li><a class="link--alternative" href="#">Collaboration</a></li>
+            <li><a class="link--alternative" href="crosmopolitans">Crosmopolitans</a></li>
+            <li><a class="link--alternative" href="acrosTrio">Acros Trio</a></li>
+            <li><a class="link--alternative" href="garufa">Garufa!</a></li>
+            <li><a class="link--alternative" href="maxSteiner">Max Steiner Orchestra</a></li>
+            <li><a class="link--alternative" href="collaborationMusicians">Collaboration</a></li>
           </ul>
         </li>
       </ul>
@@ -281,6 +301,7 @@
       </div>
     </section>
 
+    <!-- Copyright -->
     <section class="footer__copyright">
       <p><small class="section__small">Websited designed and created by Daniel Naranjo</small></p>
       <p><small class="section__small">&copy; Alejandro Loguercio. All rights reserved</small></p>
