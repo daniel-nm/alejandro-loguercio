@@ -23,11 +23,73 @@ PROJECTS
       &>.container--outer {
         display: flex;
         flex-direction: column;
-        height: 300px;
+        height: rem(300,16); /* 300px / 16px */
         justify-content: space-between;
       }
     }
   }
+
+  &--outer {
+    height: rem(500, 16); /* 500px / 16px */
+    overflow: hidden;
+    text-decoration: none;
+    @include desktop {
+      height: rem(580,16); /* 580px / 16px */
+    }
+
+    &--secondary {
+      height: rem(425,16); /* 425px / 16px */
+    }
+  }
+
+  &--inner {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all $trans-slow ease;
+    background-color: $dark-grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include laptop {
+      background-size: 100%;
+      &:hover {
+        background-size: 90%;
+        & .project--inner__span {
+          opacity: 1;
+        }
+      }
+    }
+
+    &__span {
+      display: block;
+      transition: all $trans-slow ease;
+      @include laptop {
+        opacity: 0;
+      }
+    }
+  }
+
+  &--layer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.crosmopolitans {
+  @include imgGradUrl("/media/img/crosmopolitans/crosmopolitans.jpg");
+}
+.acrosTrio {
+  @include imgGradUrl("/media/img/acros-trio/acros-trio-b&w.jpg");
+}
+.garufa {
+  @include imgGradUrl("/media/img/garufa/garufa.jpg");
 }
 
 /* 
@@ -41,22 +103,26 @@ PRESS
     & .section__title {
       color: $blue;
     }
+
     & .section__paragraph {
       color: $dark-grey;
     }
   }
+
   &__content {
     background-color: $dark-grey;
     background-image: linear-gradient(rgba(17, 22, 30, 0.5), rgba(17, 22, 30, 0.5)), url(/media/img/alejandro-loguercio/alejandro-loguercio-sitting-smiling.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: rem(560,16); /* 560px / 16px */
+    height: rem(560, 16);
+    /* 560px / 16px */
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100vw;
     margin: 0 calc(-50vw + 50%);
-    padding: 0 2.125rem; /* 34px / 16px */
+    padding: 0 2.125rem;
+    /* 34px / 16px */
 
     @include tablet {
       background: none;

@@ -8,13 +8,35 @@
     }
 
     &--project {
-      height: rem(250,16); /* 250px / 16px */
+      height: rem(250, 16);
+      /* 250px / 16px */
       width: 100%;
       object-fit: cover;
       object-position: top;
 
       @include tablet {
-        height: rem(350,16); /* 350px / 16px */
+        height: rem(350, 16);
+        /* 350px / 16px */
+      }
+
+      &--centered {
+        object-position: center;
+      }
+    }
+
+    &--banner {
+      background-color: $light-grey;
+      background-image: url(/media/img/alejandro-loguercio/alejandro-loguercio-with-violin.jpeg);
+      background-size: cover;
+      background-position: center;
+      height: rem(500, 16);
+  
+      /* 500px / 16px */
+      @include tablet {
+        background-image: url(/media/img/alejandro-loguercio/alejandro-loguercio-smiling-camera.jpeg);
+        background-position: top;
+        height: rem(550, 16);
+        /* 550px / 16px */
       }
     }
   }
@@ -23,24 +45,29 @@
 .press {
   &__image {
     display: none;
+
     @include tablet {
       display: block;
       background-image: url(/media/img/alejandro-loguercio/alejandro-loguercio-sitting-smiling.jpeg);
       background-position: top;
       background-size: cover;
       background-repeat: no-repeat;
-      height: rem(355,16); /* 355px / 16px */
+      height: rem(355, 16);
+      /* 355px / 16px */
       width: 100%;
     }
+
     @include laptop {
       background-position: center;
-      height: rem(650,16); /* 650px / 16px */
+      height: rem(650, 16);
+      /* 650px / 16px */
     }
   }
 }
 
 .audio__img {
-  height: rem(250,16); /* 250px / 16px */
+  height: rem(250, 16);
+  /* 250px / 16px */
   background-color: $medium-grey;
   background-image: url(/media/img/alejandro-loguercio/alejandro-loguercio-violin-forehand-smiling.jpeg);
   background-size: cover;
@@ -50,7 +77,8 @@
   width: 100vw;
 
   @include tablet {
-    height: rem(350,16); /* 350px / 16px */
+    height: rem(350, 16);
+    /* 350px / 16px */
     margin: auto;
     width: auto;
   }
@@ -58,20 +86,25 @@
   @include laptop {
     background-position: center;
     float: left;
-    height: rem(400,16); /* 400px / 16px */
-    width: rem(400,16); /* 400px / 16px */
-    margin-right: rem(32,16); /* 32px / 16px */
+    height: rem(400, 16);
+    /* 400px / 16px */
+    width: rem(400, 16);
+    /* 400px / 16px */
+    margin-right: rem(32, 16);
+    /* 32px / 16px */
 
     &::after {
       content: "";
       clear: both;
       display: table;
-      
+
     }
   }
 
   @include desktop {
-    height: rem(550,16); /* 550px / 16px */
-    width: rem(550,16); /* 550px / 16px */
+    height: rem(550, 16);
+    /* 550px / 16px */
+    width: rem(550, 16);
+    /* 550px / 16px */
   }
 }

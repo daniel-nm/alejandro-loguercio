@@ -30,3 +30,14 @@
     @content;
   }
 }
+
+// Images
+/////////////////
+@mixin img($url) {
+  background-image: url($url);
+}
+// Image gradient URL
+/////////////////
+@mixin imgGradUrl($url) {
+  background-image: linear-gradient(rgba(17, 22, 30, 0.5), rgba(17, 22, 30, 0.5)), url($url);
+}

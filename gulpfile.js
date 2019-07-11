@@ -1,27 +1,27 @@
 'use strict';
 
 const gulp = require("gulp"),
-      sass = require("gulp-sass"),
-      postcss = require("gulp-postcss"),
-      autoprefixer = require("autoprefixer"),
-      cssnano = require("cssnano"),
-      sourcemaps = require("gulp-sourcemaps"),
-      browserSync = require("browser-sync").create();
+    sass = require("gulp-sass"),
+    postcss = require("gulp-postcss"),
+    autoprefixer = require("autoprefixer"),
+    cssnano = require("cssnano"),
+    sourcemaps = require("gulp-sourcemaps"),
+    browserSync = require("browser-sync").create();
 
 // Paths
 var paths = {
-  // Sass / Css
+    // Sass / Css
     styles: {
         src: "styles/sass/**/*.scss",
         dest: "styles/css"
     },
     // HTML
     html: {
-     src: "./**/*.html"
+        src: "./**/*.html"
     },
     // JS
     js: {
-     src: "js/**/*.js"
+        src: "js/**/*.js"
     }
 };
 
@@ -54,7 +54,8 @@ function watch() {
     browserSync.init({
         // You can tell browserSync to use this directory and serve it as a mini-server
         server: {
-            baseDir: "./"
+            baseDir: "./",
+            // directory: true
         }
         // If you are already serving your website locally using something like apache
         // You can use the proxy setting to proxy that instead
@@ -69,7 +70,7 @@ function watch() {
     gulp.watch(paths.js.src).on('change', browserSync.reload);
 }
 
-    
+
 // Don't forget to expose the task!
 exports.watch = watch
 
@@ -82,12 +83,12 @@ exports.style = style;
  * Specify if tasks run in series or parallel using `gulp.series` and `gulp.parallel`
  */
 var build = gulp.parallel(style, watch);
- 
+
 /*
  * You can still use `gulp.task` to expose tasks
  */
 //gulp.task('build', build);
- 
+
 /*
  * Define default task that can be called by just running `gulp` from cli
  */

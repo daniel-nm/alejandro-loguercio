@@ -194,6 +194,10 @@ Link - base styles
     @include desktop {
       font-size: rem(18,16);
     }
-  }
 
+    &--white {
+      color: $white;
+      background-image: linear-gradient(to right, $white, $white);
+    }
+  }
 }

@@ -11,7 +11,6 @@ Layout
 
   @include tablet {
     &--outer {
-      // width: 95%;
       width: 90%;
       max-width: 90%;
     }
@@ -23,7 +22,6 @@ Layout
 
   @include laptop {
     &--outer {
-      // max-width: 69.75rem;
       max-width: 73.75rem;
     }
 
@@ -44,9 +42,10 @@ Layout
     flex-direction: column;
     justify-content: center;
     height: rem(100, 16);
+
     /* 100px / 16px */
     @include desktop {
-      height: rem(125,16);
+      height: rem(125, 16);
     }
   }
 
@@ -56,6 +55,24 @@ Layout
     height: rem(1, 16);
     /* 1px / 16px */
     width: 100%;
+  }
+
+  /* Multi-column layout */
+  &__column {
+    @include tablet {
+      -webkit-columns: 1;
+      columns: 1;
+      // -webkit-column-gap: 2em;
+      // column-gap: 2em;
+    }
+
+    @include laptop {
+      -webkit-columns: 2;
+      columns: 2;
+      -webkit-column-gap: 2em;
+      column-gap: 2em;
+    }
+
   }
 
   /* Flex container */
@@ -79,6 +96,22 @@ Layout
       }
     }
   }
+
+  &__iframe {
+    display: block;
+    margin: 0 auto;
+    height: rem(300, 16);
+    /* 300px / 16px */
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+
+    @include tablet {
+      height: rem(500, 16);
+      /* 500px / 16px */
+    }
+  }
+
 }
 
 /* 
@@ -87,22 +120,25 @@ Margins
 .margin {
   &__b-extra-small {
     margin-bottom: rem(12, 16);
+
     /* 12px / 16px*/
     @include laptop {
-      margin-bottom: rem(20,16);
+      margin-bottom: rem(20, 16);
     }
   }
 
   &__b-small {
     margin-bottom: rem(20, 16);
+
     /* 20px / 16px*/
     @include laptop {
-      margin-bottom: rem(32,16);
+      margin-bottom: rem(32, 16);
     }
   }
 
   &__b-normal {
     margin-bottom: rem(32, 16);
+
     /* 32px / 16px*/
     @include laptop {
       margin-bottom: rem(48, 16);
@@ -111,17 +147,21 @@ Margins
 
   &__b-large {
     margin-bottom: rem(48, 16);
+
     /* 48px / 16px*/
     @include laptop {
-      margin-bottom: rem(96, 16); /* 96px / 16px */
+      margin-bottom: rem(96, 16);
+      /* 96px / 16px */
     }
   }
 
   &__b-extra-large {
     margin-bottom: rem(64, 16);
+
     /* 64px / 16px*/
     @include laptop {
-      margin-bottom: rem(128, 16); /* 128px / 16px */
+      margin-bottom: rem(128, 16);
+      /* 128px / 16px */
     }
   }
 }
