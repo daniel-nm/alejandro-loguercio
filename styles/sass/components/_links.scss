@@ -21,7 +21,7 @@ Link - base styles
   letter-spacing: 1px;
 
   @include desktop {
-    font-size: rem(20,16);
+    font-size: rem(20, 16);
   }
 
   &:visited {
@@ -58,7 +58,8 @@ Link - base styles
 
   &--skip--top {
     position: absolute;
-    top: -(rem(30,16)); /* 30px / 16px */
+    top: -(rem(30, 16));
+    /* 30px / 16px */
     right: 1000%;
 
     &:focus {
@@ -125,7 +126,8 @@ Link - base styles
       }
 
       @include desktop {
-        font-size: rem(20, 16); /* 20px / 16px */
+        font-size: rem(20, 16);
+        /* 20px / 16px */
       }
     }
 
@@ -192,12 +194,32 @@ Link - base styles
     }
 
     @include desktop {
-      font-size: rem(18,16);
+      font-size: rem(18, 16);
     }
 
     &--white {
       color: $white;
       background-image: linear-gradient(to right, $white, $white);
     }
+  }
+
+  &--back,
+  &--next {
+    span {
+      display: block;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-top: 0.75em;
+    }
+  }
+
+  &--next {
+    text-align: right;
+  }
+
+  &__btn__group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }

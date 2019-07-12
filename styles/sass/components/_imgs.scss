@@ -26,17 +26,48 @@
 
     &--banner {
       background-color: $light-grey;
-      background-image: url(/media/img/alejandro-loguercio/alejandro-loguercio-with-violin.jpeg);
       background-size: cover;
       background-position: center;
       height: rem(500, 16);
+
+      &--float {
+        height: rem(350,16);
+      }
+
+      &--bio {
+        @include img("/media/img/alejandro-loguercio/alejandro-loguercio-with-violin.jpeg"); 
+      }
+      &--crosmopolitans {
+        @include img("/media/img/crosmopolitans/crosmopolitans-music.jpg");
+      }
+      &--acrosTrio {
+        @include img("/media/img/acros-trio/acros-trio-red.jpg");
+        background-position: top;
+      }
+      &--garufa {
+        @include img("/media/img/garufa/garufa-members-holding-instruments.jpeg");
+      }
+      &--maxSteiner {
+        @include img("/media/img/max-steiner/max_steiner_2.jpg");
+      }
+      &--collaboration {
+        @include img("/media/img/collaboration/collaboration-artists.jpg");
+      }
   
       /* 500px / 16px */
       @include tablet {
-        background-image: url(/media/img/alejandro-loguercio/alejandro-loguercio-smiling-camera.jpeg);
         background-position: top;
         height: rem(550, 16);
         /* 550px / 16px */
+        &--bio {
+          @include img("/media/img/alejandro-loguercio/alejandro-loguercio-smiling-camera.jpeg"); 
+        }
+        &--float {
+          float: left;
+          height: rem(450,16);
+          width: 40%;
+          margin-right: rem(32,16);
+        }
       }
     }
   }

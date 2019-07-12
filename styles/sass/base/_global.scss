@@ -68,6 +68,14 @@ Line (for decoration purposes)
 }
 
 /* 
+Clearfix
+************************/
+.clearfix {
+  content: '';
+  clear: both;
+  display: table;
+}
+/* 
 Hidden / Visible classes
 ************************/
 // .element {

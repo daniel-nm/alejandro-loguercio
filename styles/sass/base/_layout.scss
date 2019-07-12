@@ -13,6 +13,7 @@ Layout
     &--outer {
       width: 90%;
       max-width: 90%;
+      margin: 0 auto;
     }
 
     &--inner {
@@ -118,6 +119,13 @@ Layout
 Margins 
 ************************/
 .margin {
+  &__r-reset {
+    @include tablet {
+      margin-right: 0;
+    }
+    
+  }
+
   &__b-extra-small {
     margin-bottom: rem(12, 16);
 
