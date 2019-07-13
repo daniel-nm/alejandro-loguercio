@@ -20,8 +20,14 @@ Link - base styles
   /* 4px / 16px */
   letter-spacing: 1px;
 
-  @include desktop {
+  @include tablet {
     font-size: rem(20, 16);
+    /* 20px / 16px */
+  }
+
+  @include desktop {
+    font-size: rem(24, 16);
+    /* 24px / 16px */
   }
 
   &:visited {
@@ -150,8 +156,9 @@ Link - base styles
         font-size: rem(16, 16);
         width: auto;
 
-        @include laptop {
-          // padding-left: 4rem;
+        @include desktop {
+          font-size: rem(20, 16);
+          /* 20px / 16px */
         }
       }
     }

@@ -35,7 +35,7 @@
       }
 
       &--bio {
-        @include img("/media/img/alejandro-loguercio/alejandro-loguercio-with-violin.jpeg"); 
+        @include img("/media/img/alejandro-loguercio/alejandro-loguercio-white-shirt.jpeg"); 
       }
       &--crosmopolitans {
         @include img("/media/img/crosmopolitans/crosmopolitans-music.jpg");
@@ -53,6 +53,9 @@
       &--collaboration {
         @include img("/media/img/collaboration/collaboration-artists.jpg");
       }
+      &--contact {
+        @include img("/media/img/alejandro-loguercio/alejandro-loguercio-with-violin.jpeg");
+      }
   
       /* 500px / 16px */
       @include tablet {
@@ -61,6 +64,9 @@
         /* 550px / 16px */
         &--bio {
           @include img("/media/img/alejandro-loguercio/alejandro-loguercio-smiling-camera.jpeg"); 
+        }
+        &--contact {
+          @include img("/media/img/alejandro-loguercio/alejandro-loguercio-violin-forehand-smiling.jpeg");
         }
         &--float {
           float: left;
