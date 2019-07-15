@@ -95,7 +95,7 @@
     }
 
     @include laptop {
-      background-position: center;
+      background-position: top;
       height: rem(650, 16);
       /* 650px / 16px */
     }

@@ -2,325 +2,305 @@
 <html lang="de">
 
 <head>
+  <!-- Meta data -->
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Alejandro Loguercio - Official Website</title>
-  <meta name="description" content="Official site of Alejandro Loguercio, violinist and composer">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="Alejandro, Loguercio, Violinist, Musician, Composer, Geiger, Komponist, Musiker, Violinista, Compositor, Músico">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Title -->
+  <title>Alejandro Loguercio - Homepage</title>
+  <!-- Meta tags -->
+  <meta name="description" content="Official site of Alejandro Loguercio, violinist and composer">
+  <meta name="keywords"
+    content="Alejandro, Loguercio, Violinist, Musician, Composer, Geiger, Komponist, Musiker, Violinista, Compositor, Músico">
   <meta name="author" content="Daniel Naranjo Merino">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,700" rel="stylesheet">
   <!-- CSS -->
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/aos.css">
-  <link rel="stylesheet" href="../css/main.css">
-
+  <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
+  <link rel="stylesheet" href="/styles/css/styles.css">
   <!-- Touch Icons - iOS and Android 2.1+ 152x152 pixels in size. -->
-  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Firefox, Chrome, Safari, IE 11+ and Opera. Different sizes. -->
-  <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16">
-  <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="../favicon-96x96.png" sizes="96x96">
-
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
   <!-- HTML5 shiv -->
   <!--[if lt IE 9]>
   	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	<![endif]-->
 </head>
 
-<body id="top" class="wrapper">
+<body>
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
+  <!-- Skip to link content -->
+  <a id="skipContent" class="link link--skip" href="#main">Skip to main content</a>
+  <!-- Main navigation -->
+  <nav class="nav container container--outer" role="navigation" aria-label="Main menu">
+    <!-- Logo - acts as homepage link  -->
+    <a href="/de/" aria-current="page" class="nav__logo">alejandro<span
+        class="nav__logo--last-name">loguercio</span></a>
+    <!-- Main menu -->
+    <div class="nav__menu">
+      <a href="#" class="link link--openBtn">
+        Men&uuml;
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="6" viewBox="0 0 20 6">
+          <g transform="translate(-321 -23.5)">
+            <line class="link link__icon" x2="20" transform="translate(321 24)" fill="none" stroke="#11161e"
+              stroke-width="1" />
+            <line class="link link__icon" x2="15" transform="translate(326 29)" fill="none" stroke="#11161e"
+              stroke-width="1" />
+          </g>
+        </svg>
+      </a>
+      <ul class="nav__menu__overlay">
+        <li class="link--menu"><a href="#" class="link link--closeBtn">
+            Close
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="26" viewBox="0 0 24 24">
+              <path
+                d="M19.293 3.293L12 10.586 4.707 3.293 3.293 4.707 10.586 12 3.293 19.293 4.707 20.707 12 13.414 19.293 20.707 20.707 19.293 13.414 12 20.707 4.707z" />
+            </svg>
+          </a></li>
+        <li class="link--menu"><a class="link" href="biografie">Bio</a></li>
+        <li class="link--menu"><a class="link" href="projekte">Projekte</a></li>
+        <li class="link--menu"><a class="link" href="fotos">Fotos</a></li>
+        <li class="link--menu"><a class="link" href="kontakt">Kontakt</a></li>
+        <li class="link--menu"><a class="link" href="/"><span>EN</span></a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <header class="header">
-    <!-- Navbar -->
-    <nav class="nav" role="navigation">
-      <a href="/de/index"><img class="logo" src="../img/logo.svg" alt="Alejandro Loguercio"></a>
-      <div class="nav__menu">
-        <a id="open-nav" onclick="openNav()">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-            <path class="menu__icon" d="M4 6h16v2H4zM8 11h12v2H8zM13 16h7v2h-7z" /></svg>
-          Men&uuml;
-        </a>
+  <!-- Main content -->
+  <main id="main">
+    <!-- Jumbotron section -->
+    <section class="section jumbotron margin__b-extra-large">
+      <picture class="section__image margin__b-normal container--outer">
+        <source class="section__image" media="(max-width: 37.5em)"
+          srcset="/media/img/alejandro-loguercio/alejandro-loguercio-holding-violin-tablet.jpg">
+        <source class="section__image" media="(min-width: 37.5625em)"
+          srcset="/media/img/alejandro-loguercio/alejandro-loguercio-holding-violin.jpeg">
+        <img class="section__image" src="/media/img/alejandro-loguercio/alejandro_loguercio_holding_violin_tablet.jpg"
+          alt="Alejandro Loguercio">
+      </picture>
+      <div class="container container--outer">
+        <h1 class="section__title margin__b-extra-small">Violinist</h1>
+        <p class="container--inner section__paragraph section__paragraph--big margin__b-extra-small">F&uuml;r seine
+          ausserordentliche Musikalit&auml;t und Virtuosit&auml;t gefeiert, f&uuml;hrt
+          der venezolanische
+          Geiger Alejandro Loguercio eine aufstrebende Karriere als Solist, Kammermusiker und Orchestermusiker.
+        </p>
+        <div class="ruler margin__b-extra-small">
+          <span class="square square-1"></span>
+          <span class="square square-2"></span>
+          <span class="line"></span>
+        </div>
+        <a href="biografie" class="link">Weiterlesen</a>
       </div>
-      <div id="myNav" class="nav__overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay__content">
-          <a href="/de/index" class="nav__link active"><svg class="nav__link__icon" xmlns="http://www.w3.org/2000/svg" width="24"
-              height="24">
-              <path fill="none" d="M6 12v8h2v-5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v5h2v-8c0-.429.27-.794.649-.937L12 4.414l-6.649 6.649c.379.143.649.508.649.937z" />
-              <path fill="none" d="M10 16h4v4h-4z" />
-              <path d="M3 13h1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm7 7v-4h4v4h-4zm2-15.586l6.649 6.649A1.002 1.002 0 0 0 18 12v8h-2v-5a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v5H6v-8c0-.429-.27-.794-.649-.937L12 4.414z" /></svg>
-            Home
-          </a>
-          <a href="biografie" class="nav__link"><svg class="nav__link__icon" xmlns="http://www.w3.org/2000/svg"
-              width="24" height="24">
-              <path fill="none" d="M8 15c-2.253 0-4 1.613-4 3h8c0-1.359-1.784-3-4-3zM8 10c.883 0 1.5-.617 1.5-1.5S8.883 7 8 7s-1.5.617-1.5 1.5S7.117 10 8 10z" />
-              <path d="M15 11h7v2h-7zM16 15h6v2h-6zM14 7h8v2h-8zM3 20h10a1 1 0 0 0 1-1v-1c0-2.617-2.859-5-6-5-3.196 0-6 2.336-6 5v1a1 1 0 0 0 1 1zm5-5c2.216 0 4 1.641 4 3H4c0-1.387 1.747-3 4-3zM8 12c1.995 0 3.5-1.505 3.5-3.5S9.995 5 8 5 4.5 6.505 4.5 8.5 6.005 12 8 12zm0-5c.883 0 1.5.617 1.5 1.5S8.883 10 8 10s-1.5-.617-1.5-1.5S7.117 7 8 7z" /></svg>
-            Biografie
-          </a>
-          <a href="konzerte" class="nav__link"><svg class="nav__link__icon" xmlns="http://www.w3.org/2000/svg"
-              width="24" height="24">
-              <path fill="none" d="M19 20V8H5v12h14zm-4-9h2v2h-2v-2zm0 4h2v2h-2v-2zm-4-4h2v2h-2v-2zm0 4h2v2h-2v-2zm-4-4h2v2H7v-2zm2 4v2H7v-2h2z" />
-              <path d="M7 11h2v2H7zM7 15h2v2H7zM11 11h2v2h-2zM11 15h2v2h-2zM15 11h2v2h-2zM15 15h2v2h-2z" />
-              <path d="M4 22h16a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-3V2h-2v2H9V2H7v2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1zM19 8v12H5V8h14z" /></svg>
-            Konzerte
-          </a>
-          <a href="projekte" class="nav__link"><svg class="nav__link__icon" xmlns="http://www.w3.org/2000/svg"
-              width="24" height="24">
-              <path fill="none" d="M18 18.5v-.061A1.505 1.505 0 0 0 16.5 17c-.831 0-1.507.676-1.507 1.507s.676 1.507 1.507 1.507 1.507-.676 1.507-1.507l-.001-.007H18zM9 14.5v-.074a1.505 1.505 0 0 0-3.007.068 1.508 1.508 0 0 0 3.013.006H9z" />
-              <path d="M16.5 15c-1.934 0-3.507 1.573-3.507 3.507s1.573 3.507 3.507 3.507 3.507-1.573 3.507-3.507c0-.023-.007-.045-.007-.067V8a.999.999 0 0 0-.515-.874l-9-5A1 1 0 0 0 9 3v8.336a3.467 3.467 0 0 0-1.5-.35c-1.934 0-3.507 1.573-3.507 3.507S5.566 18 7.5 18s3.507-1.573 3.507-3.507c0-.023-.007-.045-.007-.067V4.699l7 3.89v6.761a3.467 3.467 0 0 0-1.5-.35zm-9 1c-.831 0-1.507-.676-1.507-1.507s.676-1.507 1.507-1.507c.808 0 1.464.641 1.5 1.439v.075h.006A1.508 1.508 0 0 1 7.5 16zm9 4.014c-.831 0-1.507-.676-1.507-1.507S15.669 17 16.5 17c.808 0 1.464.641 1.5 1.439v.061h.006l.001.007c0 .831-.676 1.507-1.507 1.507z" /></svg>
-            Projekte
-          </a>
-          <a href="fotos" class="nav__link"><svg class="nav__link__icon" xmlns="http://www.w3.org/2000/svg" width="24"
-              height="24">
-              <path fill="none" d="M5 12h14v8H5z" />
-              <path d="M20 10H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V11a1 1 0 0 0-1-1zm-1 10H5v-8h14v8zM5 6h14v2H5zM7 2h10v2H7z" /></svg>
-            Fotos
-          </a>
-          <a href="kontakt" class="nav__link"><svg class="nav__link__icon" xmlns="http://www.w3.org/2000/svg"
-              width="24" height="24">
-              <path fill="none" d="M6 7v13h14V4H6v3zm7 0c1.438 0 2.5 1.061 2.5 2.5S14.438 12 13 12s-2.5-1.061-2.5-2.5S11.563 7 13 7zm0 6c2.746 0 5 2.083 5 4H8c0-2 2.254-4 5-4z" />
-              <path d="M13 13c-2.746 0-5 2-5 4h10c0-1.917-2.254-4-5-4zM13 12c1.438 0 2.5-1.061 2.5-2.5S14.438 7 13 7s-2.5 1.061-2.5 2.5S11.563 12 13 12z" />
-              <path d="M21 2H5a1 1 0 0 0-1 1v4H2v2h2v2H2v2h2v2H2v2h2v4a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zm-1 18H6V4h14v16z" /></svg>
-            Kontakt
-          </a>
-          <div class="nav__language">
-            <a href="/" class="nav__link language--link">En</a>
-            <a href="/de/index" class="nav__link language--link"><b>De</b></a>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects" class="section margin__b-extra-large">
+      <!-- Section header -->
+      <div class="section__header margin__b-large">
+        <h2 class="section__title container container--outer">Projekte</h2>
+        <div class="ruler container container--outer">
+          <span class="square square--1"></span>
+          <span class="square square--2"></span>
+          <span class="line"></span>
+        </div>
+      </div>
+
+      <!-- Crossmopolitans -->
+      <a href="crossmopolitans" class="project--outer section__image margin__b-normal container--outer">
+        <div class="project--inner crosmopolitans">
+          <div class="project--layer container container--outer">
+            <h3 class="section__title section__title--alternative margin__b-small">Crossmopolitans</h3>
+            <div class="ruler margin__b-extra-small">
+              <span class="square square-1"></span>
+              <span class="square square-2"></span>
+              <span class="line"></span>
+            </div>
+            <p class="section__paragraph section__paragraph--alternative margin__b-small">Das Ensemble
+              „Crossmopolitans“ wurde aus der Idee gegr&uuml;ndet, die Grenzen zwischen klassischer und
+              popularer
+              Musik zu lockern und beide Genres miteinander zu verbinden.
+            </p>
+            <span class="link link--alternative--white project--inner__span">Weiterlesen</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Divider -->
+      <div class="section__divider margin__b-normal"></div>
+
+      <div class="section--flex container--outer margin__b-small">
+        <!-- Acros Trio -->
+        <a href="acrosTrio"
+          class="project project--outer project--outer--secondary section__image margin__b-normal container--outer">
+          <div class="project--inner acrosTrio">
+            <div class="project--layer container container--outer">
+              <h3 class="section__title section__title--alternative margin__b-small">Acros Trio</h3>
+              <div class="ruler margin__b-extra-small">
+                <span class="square square-1"></span>
+                <span class="square square-2"></span>
+                <span class="line"></span>
+              </div>
+              <p class="section__paragraph section__paragraph--alternative margin__b-small">
+                Alejandro Loguercio ist Geiger und Gr&uuml;nder des renommierten Acros Trio.
+              </p>
+              <span class="link link--alternative--white project--inner__span">Weiterlesen</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Divider -->
+        <div class="section__divider margin__b-normal"></div>
+
+        <!-- Garufa -->
+        <a href="garufa"
+          class="project project--outer project--outer--secondary section__image margin__b-normal container--outer">
+          <div class="project--inner garufa">
+            <div class="project--layer container container--outer">
+              <h3 class="section__title section__title--alternative margin__b-small">Garufa!</h3>
+              <div class="ruler margin__b-extra-small">
+                <span class="square square-1"></span>
+                <span class="square square-2"></span>
+                <span class="line"></span>
+              </div>
+              <p class="section__paragraph section__paragraph--alternative margin__b-small">
+                Das Ensemble „Garufa!“, bei welche Alejandro Loguercio seit 2010 eines der vier
+                Mitglieder ist, kombiniert Tango mit Comedy und Theater.
+              </p>
+              <span class="link link--alternative--white project--inner__span">Weiterlesen</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+      <!-- More Projects link -->
+      <div class="container">
+        <a href="projects" class="btn btn--primary">Alle Projekte Anzeigen</a>
+      </div>
+    </section>
+
+    <!-- PRESS section -->
+    <section class="section margin__b-extra-large">
+      <!-- Section header -->
+      <div class="section__header margin__b-large">
+        <h2 class="section__title container container--outer">Presse</h2>
+        <div class="ruler container container--outer">
+          <span class="square square--1"></span>
+          <span class="square square--2"></span>
+          <span class="line"></span>
+        </div>
+      </div>
+      <div class="press container container--outer">
+        <div class="press__image"></div>
+        <div class="press__content">
+          <p class="section__paragraph section__paragraph--alternative margin__b-normal">“Violinist Alejandro Loguercio
+            schon beginnt auch Alejandro Loguercio zu komponieren, sein Tango bildete die
+            Zugabe, anspruchsvoll und virtuos auch er.”
+          </p>
+          <div class="ruler margin__b-normal">
+            <span class="square square-1"></span>
+            <span class="square square-2"></span>
+            <span class="line"></span>
+          </div>
+          <p class="section__title section__title--alternative">FRANKFURTER NEUE PRESSE</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Audio section -->
+    <section class="section section--overflow margin__b-extra-large">
+      <div class="section__header margin__b-large">
+        <h2 class="section__title container container--outer">Audio</h2>
+        <div class="ruler container container--outer">
+          <span class="square square--1"></span>
+          <span class="square square--2"></span>
+          <span class="line"></span>
+        </div>
+      </div>
+      <div class="audio container container--outer">
+        <div class="audio__img margin__b-small"></div>
+        <div class="audio__info margin__b-extra-small">
+          <h2 class="section__title">Pajarillo con Vibrato</h2>
+          <p class="section__paragraph">Komponiert von Alejandro Loguercio</p>
+        </div>
+        <div class="audio__player">
+          <audio id="audio" preload="metadata">
+            <source src="/media/audio/pajarillo_con_vibrato.mp3" type="audio/mp3">
+            <source src="/media/audio/pajarillo_con_vibrato.ogg" type="audio/ogg">
+            <p>Your browser doesn't support HTML5 audio. Here is
+              a <a href="/media/audio/pajarillo_con_vibrato.mp3">link to the audio</a> instead.</p>
+          </audio>
+          <div class="audio__player-controls">
+            <div class="audio__tracker">
+              <p><small id="currentTime">00:00</small></p>
+              <div id="seekObjContainer">
+                <div id="seekObj">
+                  <div id="percentage"></div>
+                </div>
+              </div>
+            </div>
+            <button id="playAudio" class="audio__control play"></button>
           </div>
         </div>
       </div>
-    </nav>
-    <!-- Hero -->
-    <div class="section hero margin--bottom">
-      <div class="hero__img" aria-hidden="true"></div> <!-- For mobile devices only -->
-      <h1 class="section__title title--prominent">Violinist</h1>
-      <p class="hero__text">F&uuml;r seine ausserordentliche Musikalit&auml;t und Virtuosit&auml;t gefeiert, f&uuml;hrt
-        der venezolanische
-        Geiger Alejandro Loguercio eine aufstrebende Karriere als Solist, Kammermusiker und Orchestermusiker.</p>
-      <a href="biografie" class="btn__link">Mehr </a>
-      <div class="hero__scroll"><a href="#latest--concerts">Scroll</a></div>
-    </div>
-  </header>
+    </section>
 
-  <!-- Latest Concerts section -->
-  <section id="latest--concerts" class="section margin" data-aos="fade-down" data-aos-duration="1000">
-    <h1 class="section__title">Kommende Konzerte</h1>
-    <div class="ruler__block" aria-hidden="true"></div>
-    <!-- First Concert -->
-    <div class="section__concert">
-      <p class="concert__date">
-        <span class="concert__date__month">Mai</span>
-        <span class="concert__date__day">10</span>
-      </p>
-      <div class="concert__info">
-        <p class="concert__info__title"><span class="title--group">Garufa</span></p>
-        <div class="concert__info__location">
-          <p class="section--p"><span>Wien</span>&Ouml;sterreich</p>
-        </div>
-      </div>
-      <div class="btn__bg btn--noinfo">
-        Tickets nicht verf&uuml;gbar
-      </div>
-    </div>
-    <!-- Second Concert  -->
-    <div class="section__concert">
-      <p class="concert__date">
-        <span class="concert__date__month">Dez</span>
-        <span class="concert__date__day">22</span>
-      </p>
-      <div class="concert__info">
-        <p class="concert__info__title">Christmas with Pecoraro & Pecoraro</p>
-        <div class="concert__info__location">
-          <p class="section--p"><span>Bregenz</span>&Ouml;sterreich</p>
-        </div>
-      </div>
-      <a href="https://www.oeticket.com/pecoraro-pecoraro-tickets.html?affiliate=EOE&doc=artistPages/tickets&fun=artist&action=tickets&kuid=507348"
-        class="btn__bg">
-        <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-          <path fill="none" d="M11 9H9V7H4v2.146c1.444.432 2.5 1.771 2.5 3.354S5.444 15.423 4 15.854V17h5v-2h2v2h9v-1.146c-1.444-.432-2.5-1.771-2.5-3.354s1.056-2.923 2.5-3.354V7h-9v2zm0 4H9v-2h2v2z" />
-          <path d="M21 5H3a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1c.827 0 1.5.673 1.5 1.5S3.827 14 3 14a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1c-.827 0-1.5-.673-1.5-1.5S20.173 11 21 11a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1zm-1 4.146c-1.444.432-2.5 1.771-2.5 3.354s1.056 2.923 2.5 3.354V17h-9v-2H9v2H4v-1.146c1.444-.432 2.5-1.771 2.5-3.354S5.444 9.577 4 9.146V7h5v2h2V7h9v2.146z" />
-          <path d="M9 11h2v2H9z" /></svg>
-        Tickets
-      </a>
-    </div>
-    <!-- Third Concert  -->
-    <div class="section__concert">
-      <p class="concert__date">
-        <span class="concert__date__month">Dez</span>
-        <span class="concert__date__day">18</span>
-      </p>
-      <div class="concert__info">
-        <p class="concert__info__title">Christmas with Pecoraro & Pecoraro</p>
-        <div class="concert__info__location">
-          <p class="section--p"><span>ST, P&ouml;lten</span>&Ouml;sterreich</p>
-        </div>
-      </div>
-      <a href="https://www.oeticket.com/pecoraro-pecoraro-tickets.html?affiliate=EOE&doc=artistPages/tickets&fun=artist&action=tickets&kuid=507348"
-        class="btn__bg">
-        <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-          <path fill="none" d="M11 9H9V7H4v2.146c1.444.432 2.5 1.771 2.5 3.354S5.444 15.423 4 15.854V17h5v-2h2v2h9v-1.146c-1.444-.432-2.5-1.771-2.5-3.354s1.056-2.923 2.5-3.354V7h-9v2zm0 4H9v-2h2v2z" />
-          <path d="M21 5H3a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1c.827 0 1.5.673 1.5 1.5S3.827 14 3 14a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1c-.827 0-1.5-.673-1.5-1.5S20.173 11 21 11a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1zm-1 4.146c-1.444.432-2.5 1.771-2.5 3.354s1.056 2.923 2.5 3.354V17h-9v-2H9v2H4v-1.146c1.444-.432 2.5-1.771 2.5-3.354S5.444 9.577 4 9.146V7h5v2h2V7h9v2.146z" />
-          <path d="M9 11h2v2H9z" /></svg>
-        Tickets
-      </a>
-    </div>
-    <!-- Archive button -->
-    <a href="konzerte" class="btn btn__bg btn--archive">
-      <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-        <path fill="none" d="M4 18h16V8.999H4V18zm3-7h2v2h6v-2h2v3a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-3zM19.003 6.999L17.508 5h-11L5.004 6.999z" />
-        <path d="M8 15h8a1 1 0 0 0 1-1v-3h-2v2H9v-2H7v3a1 1 0 0 0 1 1z" />
-        <path d="M21.801 7.401l-2.991-4A1 1 0 0 0 18.009 3h-12a.997.997 0 0 0-.799.398L2.201 7.397l.014.01A.982.982 0 0 0 2 7.999V19a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7.999a.98.98 0 0 0-.212-.588l.013-.01zM6.508 5h11l1.495 1.999H5.004L6.508 5zM20 18H4V8.999h16V18z" /></svg>
-      Mehr Konzerte
-    </a>
-  </section>
-
-  <!-- Press section -->
-  <section id="press" class="section margin--bottom">
-    <img src="../img/alejandro-loguercio/alejandro-loguercio-sitting-smiling.jpeg" alt="alejandro loguercio smiling"
-      class="press__img" data-aos="fade-right" data-aos-duration="1000">
-    <div class="press__quote" data-aos="fade-down" data-aos-duration="1000">
-      <div class="ruler__block" aria-hidden="true"></div>
-      <blockquote class="press__text" cite="http://www.fnp.de/lokales/hochtaunus/vordertaunus/Virtuose-Musik-voller- Temperament;art48711,1709218">
-        <p>
-          <span class="quote">&ldquo;</span>
-          Violinist Alejandro Loguercio schon beginnt auch Alejandro Loguercio zu komponieren, sein Tango bildete die
-          Zugabe, anspruchsvoll und virtuos auch er.
-          <span class="quote">&rdquo;</span>
-        </p>
-      </blockquote>
-      <p class="press__name">Frankfurter Neue Presse </p>
-      <div class="ruler__block" aria-hidden="true"></div>
-    </div>
-  </section>
-
-  <!-- Projects section -->
-  <section id="projects" class="section margin">
-    <h1 class="section__title">Projekte</h1>
-    <div class="ruler__block"></div>
-    <!-- Acros Trio -->
-    <div class="project acros" data-aos="zoom-in-down" data-aos-duration="1000">
-      <img src="../img/acros-trio/acros_trio_2.jpg" alt="Acros Trio group" class="project__img">
-      <div class="project__details">
-        <h2 class="project__title">Acros Trio <span class="ruler__inline"></span></h2>
-        <p class="project__description">Alejandro Loguercio ist Geiger und Gr&uuml;nder des renommierten Acros Trio.</p>
-        <a href="acrosTrio" class="btn__link">Mehr </a>
-        <div class="project__social">
-          <a class="social" href="https://www.facebook.com/acrostrio/">
-            <svg class="facebook" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
-              <path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592	c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20	c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z" /></svg>
-          </a>
-          <a class="social" href="https://www.youtube.com/user/AcrosTrio">
-            <svg class="youtube" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
-              <path d="M21.593,7.203c-0.23-0.858-0.905-1.535-1.762-1.766C18.265,5.007,12,5,12,5S5.736,4.993,4.169,5.404	c-0.84,0.229-1.534,0.921-1.766,1.778c-0.413,1.566-0.417,4.814-0.417,4.814s-0.004,3.264,0.406,4.814	c0.23,0.857,0.905,1.534,1.763,1.765c1.582,0.43,7.83,0.437,7.83,0.437s6.265,0.007,7.831-0.403c0.856-0.23,1.534-0.906,1.767-1.763	C21.997,15.281,22,12.034,22,12.034S22.02,8.769,21.593,7.203z M9.996,15.005l0.005-6l5.207,3.005L9.996,15.005z" /></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- Garufa -->
-    <div class="project garufa" data-aos="zoom-in-down" data-aos-duration="1000">
-      <img src="../img/garufa/garufa.jpg" alt="Garufa group" class="project__img">
-      <div class="project__details">
-        <h2 class="project__title">Garufa <span class="ruler__inline"></span></h2>
-        <p class="project__description">Das Ensemble „Garufa!“, bei welche Alejandro Loguercio seit 2010 eines der vier
-          Mitglieder ist, kombiniert Tango mit Comedy und Theater.</p>
-        <a href="garufa" class="btn__link">Mehr </a>
-        <div class="project__social">
-          <a class="social" href="https://www.facebook.com/Garufa.Comedy/">
-            <svg class="facebook" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
-              <path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592	c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20	c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z" /></svg>
-          </a>
-          <a class="social" href="https://www.youtube.com/channel/UCaH1Zc4bStehGaVWUjNnS0g/featured">
-            <svg class="youtube" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
-              <path d="M21.593,7.203c-0.23-0.858-0.905-1.535-1.762-1.766C18.265,5.007,12,5,12,5S5.736,4.993,4.169,5.404	c-0.84,0.229-1.534,0.921-1.766,1.778c-0.413,1.566-0.417,4.814-0.417,4.814s-0.004,3.264,0.406,4.814	c0.23,0.857,0.905,1.534,1.763,1.765c1.582,0.43,7.83,0.437,7.83,0.437s6.265,0.007,7.831-0.403c0.856-0.23,1.534-0.906,1.767-1.763	C21.997,15.281,22,12.034,22,12.034S22.02,8.769,21.593,7.203z M9.996,15.005l0.005-6l5.207,3.005L9.996,15.005z" /></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- Max Steiner -->
-    <div class="project max--steiner" data-aos="zoom-in-down" data-aos-duration="1000">
-      <img src="../img/max-steiner/alejandro_loguercio_max_steiner_rehearsing.jpeg" alt="Max Steiner Orchestra" class="project__img">
-      <div class="project__details">
-        <h2 class="project__title">Max Steiner Orchestra <span class="ruler__inline"></span></h2>
-        <p class="project__description">Seit der Gr&uuml;ndung im Jahr 2013 ist Alejandro Loguercio 1. Konzertmeister
-          des Max&#45;Steiner&#45;Orchesters.</p>
-        <a href="maxSteiner" class="btn__link">Mehr </a>
-        <div class="project__social">
-          <a class="social" href="https://www.facebook.com/Max-Steiner-Orchestra-432700970148716/">
-            <svg class="facebook" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
-              <path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592	c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20	c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z" /></svg>
-          </a>
-          <a class="social" href="https://www.youtube.com/channel/UCTe-V6DC55uQd2GLlpw4PbA">
-            <svg class="youtube" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
-              <path d="M21.593,7.203c-0.23-0.858-0.905-1.535-1.762-1.766C18.265,5.007,12,5,12,5S5.736,4.993,4.169,5.404	c-0.84,0.229-1.534,0.921-1.766,1.778c-0.413,1.566-0.417,4.814-0.417,4.814s-0.004,3.264,0.406,4.814	c0.23,0.857,0.905,1.534,1.763,1.765c1.582,0.43,7.83,0.437,7.83,0.437s6.265,0.007,7.831-0.403c0.856-0.23,1.534-0.906,1.767-1.763	C21.997,15.281,22,12.034,22,12.034S22.02,8.769,21.593,7.203z M9.996,15.005l0.005-6l5.207,3.005L9.996,15.005z" /></svg>
-          </a>
-          <a class="social" href="https://www.instagram.com/maxsteinerorchestra/?hl=de">
-            <svg class="instagram" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
-              <path d="M11.999,7.377c-2.554,0-4.623,2.07-4.623,4.623c0,2.554,2.069,4.624,4.623,4.624c2.552,0,4.623-2.07,4.623-4.624	C16.622,9.447,14.551,7.377,11.999,7.377L11.999,7.377z M11.999,15.004c-1.659,0-3.004-1.345-3.004-3.003	c0-1.659,1.345-3.003,3.004-3.003s3.002,1.344,3.002,3.003C15.001,13.659,13.658,15.004,11.999,15.004L11.999,15.004z" />
-              <circle cx="16.806" cy="7.207" r="1.078" />
-              <path d="M20.533,6.111c-0.469-1.209-1.424-2.165-2.633-2.632c-0.699-0.263-1.438-0.404-2.186-0.42	c-0.963-0.042-1.268-0.054-3.71-0.054s-2.755,0-3.71,0.054C7.548,3.074,6.809,3.215,6.11,3.479C4.9,3.946,3.945,4.902,3.477,6.111	c-0.263,0.7-0.404,1.438-0.419,2.186c-0.043,0.962-0.056,1.267-0.056,3.71c0,2.442,0,2.753,0.056,3.71	c0.015,0.748,0.156,1.486,0.419,2.187c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45	c0.963,0.042,1.268,0.055,3.71,0.055s2.755,0,3.71-0.055c0.747-0.015,1.486-0.157,2.186-0.419c1.209-0.469,2.164-1.424,2.633-2.633	c0.263-0.7,0.404-1.438,0.419-2.186c0.043-0.962,0.056-1.267,0.056-3.71s0-2.753-0.056-3.71C20.941,7.57,20.801,6.819,20.533,6.111z M19.315,15.643c-0.007,0.576-0.111,1.147-0.311,1.688c-0.305,0.787-0.926,1.409-1.712,1.711c-0.535,0.199-1.099,0.303-1.67,0.311	c-0.95,0.044-1.218,0.055-3.654,0.055c-2.438,0-2.687,0-3.655-0.055c-0.569-0.007-1.135-0.112-1.669-0.311	c-0.789-0.301-1.414-0.923-1.719-1.711c-0.196-0.534-0.302-1.099-0.311-1.669c-0.043-0.95-0.053-1.218-0.053-3.654	c0-2.437,0-2.686,0.053-3.655c0.007-0.576,0.111-1.146,0.311-1.687c0.305-0.789,0.93-1.41,1.719-1.712	c0.534-0.198,1.1-0.303,1.669-0.311c0.951-0.043,1.218-0.055,3.655-0.055c2.437,0,2.687,0,3.654,0.055	c0.571,0.007,1.135,0.112,1.67,0.311c0.786,0.303,1.407,0.925,1.712,1.712c0.196,0.534,0.302,1.099,0.311,1.669	c0.043,0.951,0.054,1.218,0.054,3.655c0,2.436,0,2.698-0.043,3.654H19.315z" /></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- Collaboration con other musicians -->
-    <div class="project collaboration" data-aos="zoom-in-down" data-aos-duration="1000">
-      <img src="../img/collaboration/collaboration-artists-2.jpg" alt="Alejandro Loguercio" class="project__img">
-      <div class="project__details">
-        <h2 class="project__title">Zusammenarbeit Mit Anderen Musikern <span class="ruler__inline"></span></h2>
-        <p class="project__description">Alejandro Loguercio spielt auch regelm&auml;ssig in Projekten von grossen und
-          ber&uuml;hmten Musikerpers&ouml;nlichkeiten mit.</p>
-        <a href="zusammenarbeitMusikern" class="btn__link">Mehr </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Audio section -->
-  <section id="audio" class="section margin" data-aos="fade-up" data-aos-duration="1000">
-    <div class="audio__img"></div>
-    <div class="audio__info">
-      <h2 class="project__title">Anh&ouml;ren <i>Pajarillo con Vibrato</i> <span class="ruler__inline"></span></h2>
-      <div class="ruler"></div>
-      <p>Komponiert von Alejandro Loguercio</p>
-      <audio controls preload="metadata">
-        <source src="../audio/pajarillo_con_vibrato.mp3" type="audio/mp3">
-        <source src="../audio/pajarillo_con_vibrato.ogg" type="audio/ogg">
-        <p>Ihr Browser unterstützt kein HTML5 Audio. Bitte hier klicken für den
-          <a href="../audio/pajarillo_con_vibrato.mp3"> Link zum Audio</a></p>
-      </audio>
-    </div>
-  </section>
+    <!-- Divider -->
+    <div class="section__divider margin__b-normal"></div>
+  </main>
 
   <!-- Footer -->
-  <footer class="footer margin">
-    <a href="#top"><img class="logo" src="../img/logo.svg" alt="Alejandro Loguercio"></a>
-    <div class="footer__copyright">
-      <a href="https://www.facebook.com/alejandro.loguercio?fref=ts" class="social">
-        <svg class="facebook" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
-          <path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592	c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20	c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z" /></svg>
-      </a>
-      <a href="mailto:contact@alejandrologuercio.com?Subject=Email%20sent%20from%20alejandrologuercio.com" class="social">
-        <svg class="email" version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 32 32">
-          <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM8 8h16c0.286 0 0.563 0.061 0.817 0.177l-8.817 10.286-8.817-10.287c0.254-0.116 0.531-0.177 0.817-0.177zM6 22v-12c0-0.042 0.002-0.084 0.004-0.125l5.864 6.842-5.8 5.8c-0.045-0.167-0.069-0.34-0.069-0.517zM24 24h-16c-0.177 0-0.35-0.024-0.517-0.069l5.691-5.691 2.826 3.297 2.826-3.297 5.691 5.691c-0.167 0.045-0.34 0.069-0.517 0.069zM26 22c0 0.177-0.024 0.35-0.069 0.517l-5.8-5.8 5.865-6.842c0.003 0.041 0.004 0.083 0.004 0.125v12z"></path>
-        </svg>
-      </a>
-      <p class="section--p"><small>Website designed und kreiert von Daniel Naranjo</small></p>
-      <p class="section--p"><small>&copy; Alejandro Loguercio. Alle Rechte vorbehalten</small></p>
-      <p class="section--p"><small>Fotos by Amarilio Ramalho</small></p>
-    </div>
+  <footer class="footer section container container--outer margin__b-extra-large">
+    <!-- Hidden Link to top -->
+    <a id="top" class="link link--skip--top" href="#main">Go to top</a>
+    <!-- Sitemap -->
+    <section class="footer__sitemap margin__b-small">
+      <h2 class="section__title">Sitemap</h2>
+      <ul class="list">
+        <li class="list__item"><a class="link" href="index">Home</a></li>
+        <li class="list__item"><a class="link" href="biografie">Bio</a></li>
+        <li class="list__item"><a class="link" href="fotos">Fotos</a></li>
+        <li class="list__item"><a class="link" href="kontakt">Kontakt</a></li>
+        <li class="list__item">
+          <a class="link" href="projekte">Projekte</a>
+          <ul class="list">
+            <li><a class="link--alternative" href="crossmopolitans">Crossmopolitans</a></li>
+            <li><a class="link--alternative" href="acrosTrio">Acros Trio</a></li>
+            <li><a class="link--alternative" href="garufa">Garufa!</a></li>
+            <li><a class="link--alternative" href="maxSteiner">Max Steiner Orchestra</a></li>
+            <li><a class="link--alternative" href="zusammenarbeitMusikern">Zusammenarbeit</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <!-- Social -->
+    <section class="footer__social margin__b-normal">
+      <h2 class="section__title">Verbinden</h2>
+      <!-- Facebook -->
+      <div class="facebook">
+        <h3 class="section__subtitle">Facebook</h3>
+        <a class="link" href="https://www.facebook.com/alejandro.loguercio?fref=ts">facebook.com/alejandro.loguercio</a>
+      </div>
+      <div class="email">
+        <h3 class="section__subtitle">Email</h3>
+        <a class="link"
+          href="mailto:contact@alejandrologuercio.com?Subject=Email%20sent%20from%20alejandrologuercio.com">contact@alejandrologuercio.com</a>
+      </div>
+    </section>
+
+    <!-- Copyright -->
+    <section class="footer__copyright">
+      <p><small class="section__small">Website designed und kreiert von Daniel Naranjo</small></p>
+      <p><small class="section__small">&copy; Alejandro Loguercio. Alle Rechte vorbehalten</small></p>
+      <p class="margin__b-small"><small class="section__small">Fotos by Amarilio Ramalho</small></p>
+      <a href="#main" class="btn btn--primary btn--small">Top</a>
+    </section>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="../js/aos.js"></script>
-  <script src="../js/script.js"></script>
-  <script>
-    // Homepage effects
-    AOS.init();
-  </script>
+  <script src="/js/main.js"></script>
 </body>
 
 </html>
